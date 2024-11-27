@@ -26,7 +26,7 @@
 <summary><b> 🌹 Contáctos</b></summary>
 
 * theyaemoribot@gmail.com
-* https://wa.me/573218138672
+* https://wa.me/5218713339906
 * https://wa.me/5351524614
 * https://wa.me/573205853665
 * https://wa.me/573106909511
@@ -72,7 +72,7 @@ termux-setup-storage
 ```
 
 ```bash
-apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/Dev-Diego/YaemoriBot-MD/master/mini.sh | bash
+apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/OfcKing/YaemoriBot-MD/master/mini.sh | bash
 ```
 
 #### **🌺 Instalación manual por termux**
@@ -90,7 +90,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/Dev-Diego/YaemoriBot-MD && cd YaemoriBot-MD 
+git clone https://github.com/OfcKing/YaemoriBot-MD && cd YaemoriBot-MD 
 ```
 
 ```bash
@@ -167,7 +167,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 [`🚩 Instalar Cloud Shell Clic Aqui`](https://www.mediafire.com/file/bp2l6cci2p30hjv/Cloud+Shell_1.apk/file)
 
 ```bash
-> git clone https://github.com/Dev-Diego/YaemoriBot-MD
+> git clone https://github.com/OfcKing/YaemoriBot-MD
 ```
 
 ```bash
@@ -188,17 +188,17 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 #### **`🌌 ACTIVAR EN CODESPACE`**
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=Dev-Diego/YaemoriBot-MD&ref=main&geo=UsEast)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=OfcKing/YaemoriBot-MD&ref=main&geo=UsEast)
 
 ---
 
 #### **`⏏️ ACTIVAR EN KOYEB`**
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Dev-Diego/YaemoriBot-MD&branch=master&name=yaemoribot-md)
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/OfcKing/YaemoriBot-MD&branch=master&name=yaemoribot-md)
 
 ---
 
 #### **`☁️ ACTIVAR EN RENDER`**
-[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FDev-Diego%2FYaemoriBot-MD)
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FOfcKing%2FYaemoriBot-MD)
 
 ---
 
@@ -213,7 +213,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 * Descargar e instala ImageMagick [`Aquí`](https://imagemagick.org/script/download.php)
 * Descargar e instala Yarn [`Aquí`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 ```bash
-> git clone https://github.com/Dev-Diego/YaemoriBot-MD
+> git clone https://github.com/OfcKing/YaemoriBot-MD
 ```
 
 ```bash
@@ -262,13 +262,13 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 ---
 
 ### **`🌴 COLABORADORES`**
-<a href="https://github.com/Dev-Diego/YaemoriBot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Dev-Diego/YaemoriBot-MD" /> 
+<a href="https://github.com/OfcKing/YaemoriBot-MD/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=OfcKing/YaemoriBot-MD" /> 
 </a>
 
 ### **`👑 PROPIETARIO`**
 <a
-href="https://github.com/Dev-Diego"><img src="https://github.com/Dev-Diego.png" width="130" height="130" alt="OfcDiego"/></a>
+href="https://github.com/OfcKing"><img src="https://github.com/OfcKing.png" width="130" height="130" alt="DevDiego"/></a>
 
 ### **`🌹 CREDITOS`**
 <a
