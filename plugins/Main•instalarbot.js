@@ -7,7 +7,7 @@ let texto = `🚩 *Instalación de Ai Yaemori*
 
 *Comandos de instalación via cloudshell 🌱*
 
-git clone https://github.com/Dev-Diego/YaemoriBot-MD
+git clone https://github.com/OfcKing/YaemoriBot-MD
 
 cd YaemoriBot-MD && yarn install && npm install 
 
@@ -15,22 +15,22 @@ npm start
 
 _Utilice "comandos" para enviarle los comandos uno por uno 🚩_
 
-_Utilice "corin" para enviarle la instalación por el host *corinplus* 🚩_`
+_Utilice "sky" para enviarle la instalación por el host *skyultraplus* 🚩_`
 
 conn.reply(m.chat, texto, m, rcanal )
 
 handler.before = async m => {
 
 if (/^comandos$/i.test(m.text) ) {
-conn.reply(m.chat, 'git clone https://github.com/Dev-Diego/YaemoriBot-MD && cd YaemoriBot-MD', m, rcanal)
+conn.reply(m.chat, 'git clone https://github.com/OfcKing/YaemoriBot-MD && cd YaemoriBot-MD', m, rcanal)
 await delay(1000 * 1)
 conn.reply(m.chat, 'yarn install && npm install', m, rcanal)
 await delay(1000 * 1)
 conn.reply(m.chat, 'npm start', m, rcanal)
 }
 
-if (/^corin$/i.test(m.text) ) {
-conn.reply(m.chat, '💠 *Instalación por CorinPlus*\n(nosotros no tenemos tutorial pero eso les puede ayudar)\n\n• Dashboard:\nhttps://dash.corinplus.com\n\n• Panel:\nhttps://panel.corinplus.com', m, rcanal)
+if (/^sky$/i.test(m.text) ) {
+conn.reply(m.chat, '💠 *Instalación por SkyUltraPlus*\n(nosotros no tenemos tutorial pero eso les puede ayudar)\n\n• Dashboard:\nhttps://dash.skyultraplus.com\n\n• Panel:\nhttps://panel.skyultraplus.com', m, rcanal)
 await delay(2000 * 1)
 conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/9532b7ff1fabc02d7e199.jpg'}, caption: ''}, {quoted: fkontak})
 await delay(1000 * 1)
