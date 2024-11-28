@@ -18,20 +18,20 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/Dev-Diego/YaemoriBot-MD",
+"homepage": "https://github.com/OfcKing/YaemoriBot-MD",
 "author": {
-"name": "Dev-Diego"
+"name": "OfcKing"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/Dev-Diego/YaemoriBot-MD.git"
+"url": "git+https://github.com/OfcKing/YaemoriBot-MD.git"
 },
 "bugs": {
-"url": "https://github.com/Dev-Diego/YaemoriBot-MD/issues"
+"url": "https://github.com/OfcKing/YaemoriBot-MD/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
-"@whiskeysockets/baileys": "github:Dev-Diego/Bailey",
+"@whiskeysockets/baileys": "github:OfcKing/Bailey",
 "@adiwajshing/keyed-db": "^0.2.4",
 "@bochilteam/scraper": "^4.2.4",
 "@bochilteam/scraper-sosmed": "^1.0.5",
