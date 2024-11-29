@@ -53,7 +53,19 @@ mini += `✨️ *Exp* » 300\n`
 mini += `💰 *Joincount* » 20\n`
 mini += `🪙 *Money* » 100`
 await m.react('🗂')
-await m.reply(mini)
+//await m.reply(mini)
+await conn.sendMessage(m.chat, {
+text: mini,
+contextInfo: {
+externalAdReply: {
+title: '✅️ •R E G I S T R O• ✅️',
+body: packname,
+thumbnailUrl: perfil, 
+sourceUrl: redes,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}}, { quoted: fkontak })
 
 let chtxt = `
 👤 *Usuario* » ${m.pushName || 'Anónimo'}
