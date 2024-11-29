@@ -21,4 +21,5 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })}
 handler.help = ['kiss']
 handler.tags = ['fun']
 handler.command = ['kiss', 'skiss', 'kis', 'besos', 'beso', 'besar', 'besando']
+handler.group = true
 export default handler
