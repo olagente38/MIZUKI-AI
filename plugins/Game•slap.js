@@ -21,6 +21,7 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })}
 handler.help = ['slap']
 handler.tags = ['fun']
 handler.command = ['slap', 'bofetada', 'manotada', 'abofetear', 'golpear']
+handler.group = true
 export default handler
 
 const s = [
