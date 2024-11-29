@@ -4,9 +4,8 @@ import fs from 'fs'
 import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 import _ from "lodash"
-import moment from 'moment-timezone'
-import axios from 'axios'
 
+if (command == 'reg') {
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
@@ -38,16 +37,6 @@ fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString(
   age = parseInt(age)
   if (age > 100) return m.reply('👴🏻 Wow el abuelo quiere jugar al bot.')
   if (age < 5) return m.reply('🚼  hay un abuelo bebé jsjsj. ')
-  user.name = name + '✓'.trim()
-  user.age = age
-  user.descripcion = bio 
-  user.regTime = + new Date      
-  user.registered = true
-  global.db.data.users[m.sender].money += 100
-  global.db.data.users[m.sender].chocolates += 40
-  global.db.data.users[m.sender].exp += 300
-  global.db.data.users[m.sender].joincount += 20
-  let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
 let mini = `🗃️ 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗔 𝗗 𝗢 🗃️\n`
 mini += `💭 *Nombre* » ${name}\n`
 mini += `🍁 *Edad* » ${age} años\n\n`
@@ -69,7 +58,40 @@ sourceUrl: redes,
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
-}}}, { quoted: fkontak })
+}}}, { quoted: fkontak })}
+if (command == 'finalizar' || command == 'end') {
+  user.name = name + '✓'.trim()
+  user.age = age
+  user.descripcion = bio 
+  user.regTime = + new Date      
+  user.registered = true
+  global.db.data.users[m.sender].money += 100
+  global.db.data.users[m.sender].chocolates += 40
+  global.db.data.users[m.sender].exp += 300
+  global.db.data.users[m.sender].joincount += 20
+  let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
+/*let mini = `🗃️ 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗔 𝗗 𝗢 🗃️\n`
+mini += `💭 *Nombre* » ${name}\n`
+mini += `🍁 *Edad* » ${age} años\n\n`
+mini += `🎁 𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:\n`
+mini += `🍫 *Chocolates* » 40\n`
+mini += `✨️ *Exp* » 300\n`
+mini += `💰 *Joincount* » 20\n`
+mini += `🪙 *Money* » 100`
+await m.react('🗂')
+//await m.reply(mini)
+await conn.sendMessage(m.chat, {
+text: mini,
+contextInfo: {
+externalAdReply: {
+title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
+body: packname,
+thumbnailUrl: pp, 
+sourceUrl: redes,
+mediaType: 1,
+showAdAttribution: true,
+renderLargerThumbnail: true
+}}}, { quoted: fkontak })*/
 
 let chtxt = `
 👤 *Usuario* » ${m.pushName || 'Anónimo'}
@@ -95,6 +117,6 @@ renderLargerThumbnail: false
 }
 handler.help = ['reg']
 handler.tags = ['rg']
-handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar'] 
+handler.command = ['reg', 'finalizar', 'end'] 
 
 export default handler
