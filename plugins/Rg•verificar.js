@@ -4,9 +4,8 @@ import fs from 'fs'
 import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 import _ from "lodash"
-
-if (command == 'reg') {
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
+
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
@@ -26,6 +25,7 @@ fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString(
 }
   let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
   let pp = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://qu.ax/QGAVS.jpg')
+  if (command == 'reg') {
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
   if (user.registered === true) return m.reply(`🍭 Ya estás registrado.\n\n*¿Quiere volver a registrarse?*\n\nUse este comando para eliminar su registro.\n*${usedPrefix}unreg*`)
