@@ -7,11 +7,11 @@ import fetch from 'node-fetch'
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
 let mentionedJid = [who]
-  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let delirius = await axios.get(`https://deliriussapi-oficial.vercel.app/tools/country?text=${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}`)
   let paisdata = delirius.data.result
   let mundo = paisdata ? `${paisdata.name} ${paisdata.emoji}` : 'Desconocido'
-  let bio = 0, fechaBio
+  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+ let bio = 0, fechaBio
  let who2 = m.isGroup ? _.get(m, "mentionedJid[0]", m.quoted?.sender || m.sender) : m.sender
   let sinDefinir = '😿 Es privada'
   let biografia = await conn.fetchStatus(who2).catch(() => null)
@@ -23,6 +23,7 @@ bio = biografia[0].status || sinDefinir
 fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString("es-ES", { day: "2-digit", month: "2-digit", year: "numeric", }) : "Fecha no disponible"
 }
   let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
+  let pp = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://qu.ax/QGAVS.jpg')
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
   if (user.registered === true) return m.reply(`🍭 Ya estás registrado.\n\n*¿Quiere volver a registrarse?*\n\nUse este comando para eliminar su registro.\n*${usedPrefix}unreg*`)
@@ -60,7 +61,7 @@ contextInfo: {
 externalAdReply: {
 title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
 body: packname,
-thumbnailUrl: perfil, 
+thumbnailUrl: pp, 
 sourceUrl: redes,
 mediaType: 1,
 showAdAttribution: true,
