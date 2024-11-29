@@ -21,4 +21,5 @@ conn.sendFile(m.chat, stiker, null, { asSticker: true })}
 handler.help = ['alimentar']
 handler.tags = ['fun']
 handler.command = ['alimentar', 'food']
+handler.group = true
 export default handler
