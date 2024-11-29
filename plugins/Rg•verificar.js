@@ -116,7 +116,7 @@ mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
 }}}, { quoted: null })
-}
+}}
 handler.help = ['reg']
 handler.tags = ['rg']
 handler.command = ['reg', 'finalizar', 'end'] 
