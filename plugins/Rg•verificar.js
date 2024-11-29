@@ -44,7 +44,9 @@ mini += `🎁 𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:\n`
 mini += `🍫 *Chocolates* » 40\n`
 mini += `✨️ *Exp* » 300\n`
 mini += `💰 *Joincount* » 20\n`
-mini += `🪙 *Money* » 100`
+mini += `🪙 *Money* » 100\n\n`
+mini += `🚩 \`\`\`Para finalizar su registro escriba:\`\`\`
+✪ *${usedPrefix}finalizar*`
 await m.react('🗂')
 //await m.reply(mini)
 await conn.sendMessage(m.chat, {
