@@ -2,9 +2,10 @@ import db from '../lib/database.js'
 import { createHash } from 'crypto'
 import fs from 'fs'
 import PhoneNumber from 'awesome-phonenumber'
+import { createHash } from 'crypto'  
 import fetch from 'node-fetch'
 import _ from "lodash"
-let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
+// let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
