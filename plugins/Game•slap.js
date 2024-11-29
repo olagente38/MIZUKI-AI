@@ -2,13 +2,16 @@ import { sticker } from '../lib/sticker.js'
 import fetch from 'node-fetch'
 let MessageType = (await import('@whiskeysockets/baileys')).default
 let handler = async (m, { conn}) => {
-try {   
+try {  
+if (!m.sender) return m.reply(`🚩 Etiqueta o menciona a alguien`) 
 if(m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
 if(!m.mentionedJid.length) m.mentionedJid.push(m.sender)
 //let res = await fetch('https://neko-love.xyz/api/v1/slap')
 //let json = await res.json()
 //let { url } = json
-let stiker = await sticker(null,s[Math.floor(Math.random() * s.length)], `+${m.sender.split('@')[0]} le dio una bofetada a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
+let name = conn.getName(m.sender)
+let name2 = conn.getName(m.sender)
+let stiker = await sticker(null,s[Math.floor(Math.random() * s.length)], `${name} le dio una bofetada a ${name2}`)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
 handler.help = ['slap']
