@@ -37,7 +37,7 @@ fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString(
   age = parseInt(age)
   if (age > 100) return m.reply('👴🏻 Wow el abuelo quiere jugar al bot.')
   if (age < 5) return m.reply('🚼  hay un abuelo bebé jsjsj. ')
-global.db.data.users[m.sender]['registered'] = true
+// global.db.data.users[m.sender]['registered'] = true
 let mini = `🗃️ 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗔 𝗗 𝗢 🗃️\n`
 mini += `💭 *Nombre* » ${name}\n`
 mini += `🍁 *Edad* » ${age} años\n\n`
