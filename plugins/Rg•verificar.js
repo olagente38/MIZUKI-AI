@@ -12,9 +12,8 @@ let mentionedJid = [who]
   let mundo = paisdata ? `${paisdata.name} ${paisdata.emoji}` : 'Desconocido'
   let bio = 0, fechaBio
  // let who2 = m.isGroup ? _.get(m, "mentionedJid[0]", m.quoted?.sender || m.sender) : m.sender
-  let who2 = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let sinDefinir = '😿 Es privada'
-  let biografia = await conn.fetchStatus(who2).catch(() => null)
+  let biografia = await conn.fetchStatus(m.sender).catch(() => null)
   if (!biografia || !biografia[0] || biografia[0].status === null) {
    bio = sinDefinir
    fechaBio = "Fecha no disponible"
