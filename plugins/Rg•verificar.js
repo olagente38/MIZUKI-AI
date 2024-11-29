@@ -74,28 +74,7 @@ if (command == 'finalizar' || command == 'end') {
   global.db.data.users[m.sender].exp += 300
   global.db.data.users[m.sender].joincount += 20
   let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
-/*let mini = `🗃️ 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗔 𝗗 𝗢 🗃️\n`
-mini += `💭 *Nombre* » ${name}\n`
-mini += `🍁 *Edad* » ${age} años\n\n`
-mini += `🎁 𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:\n`
-mini += `🍫 *Chocolates* » 40\n`
-mini += `✨️ *Exp* » 300\n`
-mini += `💰 *Joincount* » 20\n`
-mini += `🪙 *Money* » 100`
-await m.react('🗂')
-//await m.reply(mini)
-await conn.sendMessage(m.chat, {
-text: mini,
-contextInfo: {
-externalAdReply: {
-title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
-body: packname,
-thumbnailUrl: pp, 
-sourceUrl: redes,
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}}, { quoted: fkontak })*/
+m.reply(sn)
 
 let chtxt = `
 👤 *Usuario* » ${m.pushName || 'Anónimo'}
