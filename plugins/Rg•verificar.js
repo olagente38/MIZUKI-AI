@@ -3,7 +3,7 @@ import { createHash } from 'crypto'
 import fs from 'fs'
 import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
-import _ from 'lodash'
+import _ from "lodash"
 
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
