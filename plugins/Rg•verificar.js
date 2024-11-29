@@ -92,8 +92,8 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
       let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
       m.reply(`✅️ Ya estás en mi base de datos!`)
       await m.react(done)
-      try {
-      m.reply(sn)}
+    //  try {
+      m.reply(sn)//}
 
       let chtxt = `
 👤 *Usuario* » ${m.pushName || 'Anónimo'}
