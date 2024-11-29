@@ -58,7 +58,7 @@ await conn.sendMessage(m.chat, {
 text: mini,
 contextInfo: {
 externalAdReply: {
-title: '✅️ •R E G I S T R O• ✅️',
+title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
 body: packname,
 thumbnailUrl: perfil, 
 sourceUrl: redes,
