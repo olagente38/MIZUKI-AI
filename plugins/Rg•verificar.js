@@ -37,7 +37,7 @@ fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString(
   age = parseInt(age)
   if (age > 100) return m.reply('👴🏻 Wow el abuelo quiere jugar al bot.')
   if (age < 5) return m.reply('🚼  hay un abuelo bebé jsjsj. ')
-// global.db.data.users[m.sender]['registered'] = true
+global.db.data.users[m.sender]['registered'] = true
 let mini = `🗃️ 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗔 𝗗 𝗢 🗃️\n`
 mini += `💭 *Nombre* » ${name}\n`
 mini += `🍁 *Edad* » ${age} años\n\n`
@@ -63,7 +63,7 @@ showAdAttribution: true,
 renderLargerThumbnail: true
 }}}, { quoted: fkontak })}
 if (command == 'finalizar' || command == 'end') {
-  global.db.data.users[m.sender]['registered'] = true
+  if (global.db.data.users[m.sender]['registered'] == true) {
   user.name = name + '✓'.trim()
   user.age = age
   user.descripcion = bio 
@@ -96,7 +96,7 @@ sourceUrl: redes,
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
-}}}, { quoted: null })
+}}}, { quoted: null })}
 }}
 handler.help = ['reg']
 handler.tags = ['rg']
