@@ -11,6 +11,17 @@ let mentionedJid = [who]
   let delirius = await axios.get(`https://deliriussapi-oficial.vercel.app/tools/country?text=${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}`)
   let paisdata = delirius.data.result
   let mundo = paisdata ? `${paisdata.name} ${paisdata.emoji}` : 'Desconocido'
+  let nombre = bio = 0, fechaBio
+  let who2 = m.isGroup ? _.get(m, "mentionedJid[0]", m.quoted?.sender || m.sender) : m.sender
+  let sinDefinir = '😿 Es privada'
+  let biografia = await conn.fetchStatus(who2).catch(() => null)
+  if (!biografia || !biografia[0] || biografia[0].status === null) {
+   bio = sinDefinir
+   fechaBio = "Fecha no disponible"
+} else {
+bio = biografia[0].status || sinDefinir
+fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString("es-ES", { day: "2-digit", month: "2-digit", year: "numeric", }) : "Fecha no disponible"
+}
   let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
@@ -25,6 +36,7 @@ let mentionedJid = [who]
   if (age < 5) return m.reply('🚼  hay un abuelo bebé jsjsj. ')
   user.name = name + '✓'.trim()
   user.age = age
+  user.descripcion = bio 
   user.regTime = + new Date      
   user.registered = true
   global.db.data.users[m.sender].money += 100
@@ -48,6 +60,8 @@ let chtxt = `
 🌎 *Pais* » ${mundo}
 🗃 *Verificación* » ${user.name}
 🌺 *Edad* » ${user.age} años
+👀 *Descripción* » ${user.descripcion} 
+⏳ *Modificación de descripción* » ${fechaBio}
 📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
 ☁️ *Número de registro* »
 ⤷ ${sn}
