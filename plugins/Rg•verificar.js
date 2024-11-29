@@ -90,18 +90,21 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
       global.db.data.users[m.sender].exp += 300
       global.db.data.users[m.sender].joincount += 20
       let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
-      m.reply(sn)
+      m.reply(`✅️ Ya estás en mi base de datos!`)
+      await m.react(done)
+      try {
+      m.reply(sn)}
 
       let chtxt = `
-      👤 *Usuario* » ${m.pushName || 'Anónimo'}
-      🌎 *Pais* » ${mundo}
-      🗃 *Verificación* » ${user.name}
-      🌺 *Edad* » ${user.age} años
-      👀 *Descripción* » ${user.descripcion}
-      ⏳ *Modificación de descripción* » ${fechaBio}
-      📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
-      ☁️ *Número de registro* »
-      ⤷ ${sn}
+👤 *Usuario* » ${m.pushName || 'Anónimo'}
+🌎 *Pais* » ${mundo}
+🗃 *Verificación* » ${user.name}
+🌺 *Edad* » ${user.age} años
+👀 *Descripción* » ${user.descripcion}
+⏳ *Modificación de descripción* » ${fechaBio}
+📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
+☁️ *Número de registro* »
+⤷ ${sn}
       `.trim()
       
       await conn.sendMessage(global.channelid, {
