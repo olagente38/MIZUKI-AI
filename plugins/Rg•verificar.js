@@ -76,6 +76,7 @@ let chtxt = `
 🌺 *Edad* » ${user.age} años
 👀 *Descripción* » ${user.descripcion} 
 ⏳ *Modificación de descripción* » ${fechaBio}
+🍄 *Bot* » 𝙔𝙖𝙚𝙢𝙤𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 ✨️🌸
 📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
 ☁️ *Número de registro* »
 ⤷ ${sn}
