@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
     let dmt = parseInt(txt)
     let chocolates = dmt
     let pjk = Math.ceil(dmt * impts)
-    cookies += pjk
+    chocolates += pjk
     if (chocolates < 1) return m.reply('🪐 Mínimo es  *1*')
     let users = global.db.data.users
    users[who].chocolates += dmt
