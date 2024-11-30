@@ -198,7 +198,7 @@ await conn.reply(m.chat, `${htki} *🎟️ 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 🎟️*
 
 break        
 
-}}
+}
 handler.help = ['serprem']
 handler.tags = ['rpg']
 handler.command = ['comprar', 'prem1', 'prem2', 'prem3', 'prem4', 'prem5', 'prem6', 'prem7', 'prem8', 'premium', 'vip', 'prem', 'pass', 'pase']
