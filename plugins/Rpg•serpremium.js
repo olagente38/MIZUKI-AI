@@ -9,7 +9,7 @@ var tiempoDecretado = 5 * 1
 const gata = 15
 let user = global.db.data.users[m.sender]
 
-if (!text) return conn.reply(m.chat, `🍄 *Ingrese el tiempo de premium*\n\n🎟️ 1 = ${tiempoDecretado} Minutos\n${gata} 🍫\n\n👏 Ejemplo: ${usedPrefix + command} 1`, m, rcanal)
+if (!text) return conn.reply(m.chat, `🍄 *Ingrese el tiempo de premium*\n\n🎟️ 1 = ${tiempoDecretado} Minutos\n${gata} Chocolates 🍫\n\n👏 Ejemplo: ${usedPrefix + command} 1`, m, rcanal)
 if (isNaN(text)) return conn.reply(m.chat, `🌹 Solo se aceptan numeros.`, m, fake)
 if (user.chocolates < gata) return conn.reply(m.chat, `🍄 No tienes suficiente chocolates para adquirir el premium.`, m, rcanal)
 user.chocolates -= gata * text
