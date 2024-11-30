@@ -9,7 +9,7 @@ let txt = `*🌴 Balance de ${name}*
 	➺ *Banco* : ${global.db.data.users[who].bank} 
 	➺ *Experiencia* : ${global.db.data.users[who].exp}
 
-> Para proteger tus *Chocolates' en el banco use *#depositar*`
+> Para proteger tus *Chocolates* en el banco use *#depositar*`
 await conn.reply(m.chat, txt, m, rcanal)
 }
 
