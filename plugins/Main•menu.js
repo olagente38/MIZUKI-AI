@@ -169,7 +169,7 @@ let menu = `*˚₊·˚₊· ͟͟͞͞➳❥ ${taguser}*
 │🍂⃟🍁┊${usedPrefix}retirar
 │🍂⃟🍁┊${usedPrefix}rob2
 │🍂⃟🍁┊${usedPrefix}rob
-│🍂⃟🍁┊${usedPrefix}addprem 
+│🍂⃟🍁┊${usedPrefix}serprem 
 │🍂⃟🍁┊${usedPrefix}slut
 │🍂⃟🍁┊${usedPrefix}trabajar
 │🍂⃟🍁┊${usedPrefix}transfer
