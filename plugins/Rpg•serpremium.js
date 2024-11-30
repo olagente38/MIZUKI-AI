@@ -1,3 +1,5 @@
+// By: @GataDios >> GataBot
+
 let handler = async (m, { conn, text, usedPrefix, command, args }) => {
 
 let toUser = `${m.sender.split("@")[0]}`
