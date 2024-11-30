@@ -19,7 +19,7 @@ const handler = async (m, {args, usedPrefix, command}) => {
    // previewType: 0, thumbnail: icons,
    // sourceUrl: redes }}})
    const result = await translate(`${text}`, {to: lang, autoCorrect: true});
-    await m.reply('*Traducción:* ' + result.text);
+    await conn.reply(m.chat, result.text, m, fake);
   } catch {
     try {
     conn.reply(m.chat, wait, m, {
@@ -31,7 +31,7 @@ const handler = async (m, {args, usedPrefix, command}) => {
       const lol = await fetch(`https://api.lolhuman.xyz/api/translate/auto/${lang}?apikey=${lolkeysapi}&text=${text}`);
       const loll = await lol.json();
       const result2 = loll.result.translated;
-      await m.reply('*Traducción:* ' + result2);
+      await conn.reply(m.chat, result2, m, fake);
     } catch {
       await m.reply('✨️ *Ocurrió Un Error*');
     }
