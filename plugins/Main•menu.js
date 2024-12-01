@@ -52,7 +52,7 @@ const defaultMenu = {
 *┊ ✦* Usuarios » %totalreg
  ︶︶︶︶︶︶︶︶︶︶︶︶
 `.trimStart(),
-    header: ' ︿︿︿︿︿︿︿︿︿︿︿︿\n┊ ❀ 「 `%category` 」\n❀\n ︶︶︶︶︶︶︶︶︶︶︶︶',
+    header: ' ︿︿︿︿︿︿︿︿︿︿︿︿\n┊ ❀ 「 `%category` 」❀\n ︶︶︶︶︶︶︶︶︶︶︶︶',
   body: '*┊ ✦* _%cmd_',
   footer: ' ︶︶︶︶︶︶︶︶︶︶︶︶\n',
   after: `> ${dev}`,
