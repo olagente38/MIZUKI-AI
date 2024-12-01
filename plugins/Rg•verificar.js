@@ -39,6 +39,7 @@ fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString(
   user.name = name + '✓'.trim()
   user.age = age
   user.descripcion = bio 
+  used.edit = fechaBio
   user.regTime = + new Date      
   user.registered = true
   global.db.data.users[m.sender].money += 100
@@ -85,6 +86,9 @@ let chtxt = `
 
 ♻️ *Descripción* »
 ${user.descripcion}
+
+🙌 *Fecha de edición* »
+${user.edit}
 `.trim()
 await conn.sendMessage(global.channelid, { text: chtxt, contextInfo: {
 externalAdReply: {
