@@ -3,7 +3,7 @@
 import axios from "axios";
 
 let frasesEnviadas = [];
-cons idchannel = "573012482597@s.whatsapp.net"
+let idchannel = "573012482597@s.whatsapp.net"
 
 async function obtenerFraseAleatoria() {
   try {
