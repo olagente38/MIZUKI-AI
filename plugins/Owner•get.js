@@ -22,5 +22,6 @@ let handler = async (m, { text, usedPrefix, command }) => {
 handler.help = ['get']
 handler.tags = ['owner']
 handler.command = ['get', 'getweb']
+handler.rowner = true
 
 export default handler
