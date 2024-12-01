@@ -94,7 +94,7 @@ mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
 }}}, { quoted: null })
-await conn.reply(`♻️ *Descripción* »\n> ` + user.descripcion + `\n\n🙌 *Fecha de edición* »\n> ` + user.edit, null, fake)
+await conn.reply(channelid, `♻️ *Descripción* »\n> ` + user.descripcion + `\n\n🙌 *Fecha de edición* »\n> ` + user.edit, null, fake)
 }
 handler.help = ['reg']
 handler.tags = ['rg']
