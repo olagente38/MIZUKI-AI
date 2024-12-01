@@ -1,7 +1,7 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 if (!m.quoted || !m.quoted.mtype.startsWith('image')) {
-await m.reply('🚩 Te faltó la *imagen*')
+await m.reply('🚩 Responde a una *Imagen.*')
 return
 }
 
@@ -11,7 +11,7 @@ await m.reply('✖️ Hubo un problema al descargar la imagen. Por favor, intent
 return
 }
 
-await conn.updateProfilePicture(conn.user.jid, media)
+await conn.updateProfilePicture(media)
 await m.reply('🍄 Foto de perfil actualizada exitosamente.')
 }
 
