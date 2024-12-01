@@ -82,6 +82,9 @@ let chtxt = `
 *┊ ✦* ☁️ *Número de registro* »
 *┊ ✦* ⤷ ${sn}
  ︶︶︶︶︶︶︶︶︶︶︶︶
+
+♻️ *Descripción* »
+${user.descripcion}
 `.trim()
 await conn.sendMessage(global.channelid, { text: chtxt, contextInfo: {
 externalAdReply: {
