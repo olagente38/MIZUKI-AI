@@ -6,9 +6,7 @@ let handler = async (m, { conn, args }) => {
         return
     }
                 await conn.sendContact(m.chat, [[`${who.split`@`[0]}@s.whatsapp.net`, `${username}`]], m)
-            }
-        }
-    })
+      
 }
 
 handler.help = ['savecontact *@tag*']
