@@ -1,21 +1,26 @@
 let handler = async (m, { conn, args }) => {
+    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : null
 
-let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let username = conn.getName(who)
+    if (!who) {
+        await m.reply('Por favor, menciona el número que quieres que guarde.')
+        return
+    }
+    await m.reply('Por favor, proporcione el nombre con el que desea guardar el contacto.')
 
-if (!m.mentionedJid || m.mentionedJid.length === 0) {
-await conn.reply(m.chat, '🍄 Mencione al usuario que quieres que aguarde en mis contactos.', m, rcanal)
-return
+    let username
+    await conn.on('chat-update', async chatUpdate => {
+        if (chatUpdate.messages && chatUpdate.count) {
+            let message = chatUpdate.messages.all()[0]
+            if (message.key.remoteJid === m.chat && !message.key.fromMe) {
+                username = message.message.conversation
+                await conn.sendContact(m.chat, [[`${who.split`@`[0]}@s.whatsapp.net`, `${username}`]], m)
+            }
+        }
+    })
 }
 
-const nameRequest = await conn.reply(m.chat, '✨️ Por favor, proporcione el nombre con el que desea guardar el contacto.', m, rcanal)
-
-let username = await conn.getName(nameRequest)
-
-await conn.sendContact(m.chat, [[`${who.split`@`[0]}@s.whatsapp.net`, `${username}`]], m)
-}
-handler.help = ['newcontact *@tag*']
-handler.tags = ['owner']
-handler.command = ['newcontact', 'savecontact']
-handler.rowner = true 
+handler.help = ['savecontact *@tag*']
+handler.tags = ['tools']
+handler.command = ['savecontact', 'save']
+//handler.group = true 
 export default handler
