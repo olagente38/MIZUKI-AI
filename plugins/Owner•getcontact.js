@@ -5,7 +5,7 @@ let handler = async (m, { conn, args }) => {
         await m.reply('Por favor, menciona el número que quieres que guarde.')
         return
     }
-                await conn.sendContact(m.chat, [[`${who.split`@`[0]}@s.whatsapp.net`, `${username}`]], m)
+                await conn.sendContact(m.chat, [[`${who.split`@`[0]}@s.whatsapp.net`, `${wm}`]], m)
 
                 await conn.updateProfileName(`${who.split`@`[0]}@s.whatsapp.net`, wm)
                 await m.reply(`Contacto guardado como ${wm}`)
