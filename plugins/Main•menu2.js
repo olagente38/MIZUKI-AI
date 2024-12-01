@@ -173,7 +173,7 @@ const document = doc[Math.floor(Math.random() * doc.length)];
     conn.reply(m.chat, '「✿」 *Ocurrió un error al enviar el menú de audios.*', m, fake, );
   }
 };
-handler.tags = ['main']
+handler.tags = ['main2']
 handler.help = ['menu2']
 handler.command = ['menu2', 'menuaudios'];
 handler.register = true
