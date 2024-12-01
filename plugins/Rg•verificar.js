@@ -77,8 +77,6 @@ let chtxt = `
 *┊ ✦* 🌎 *Pais* » ${mundo}
 *┊ ✦* 🗃 *Verificación* » ${user.name}
 *┊ ✦* 🌺 *Edad* » ${user.age} años
-*┊ ✦* 👀 *Descripción* » ${user.descripcion} 
-*┊ ✦* ⏳ *Modificación de descripción* » ${fechaBio}
 *┊ ✦* 🍄 *Bot* » 𝙔𝙖𝙚𝙢𝙤𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 ✨️🌸
 *┊ ✦* 📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
 *┊ ✦* ☁️ *Número de registro* »
@@ -88,7 +86,7 @@ let chtxt = `
 await conn.sendMessage(global.channelid, { text: chtxt, contextInfo: {
 externalAdReply: {
 title: "【 🔔 𝗡𝗢𝗧𝗜𝗙𝗜𝗖𝗔𝗖𝗜𝗢́𝗡 🔔 】",
-body: '🥳 ¡Un usuario nuevo en mi base de datos!',
+body: user.descripcion,
 thumbnailUrl: perfil,
 sourceUrl: redes,
 mediaType: 1,
