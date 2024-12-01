@@ -32,7 +32,7 @@ const defaultMenu = {
   before: `Hola %taguser 👋, Soy YaemoriBot
 
  ︿︿︿︿︿︿︿︿︿︿︿︿
-┊ ❀ 「 `\𝙸𝙽𝙵𝙾 - 𝚄𝚂𝙴𝚁`\ 」 ❀
+┊ ❀ 「 \`𝙸𝙽𝙵𝙾 - 𝚄𝚂𝙴𝚁\` 」 ❀
  ︶︶︶︶︶︶︶︶︶︶︶︶ 
 *┊ ✦* Cliente » %name
 *┊ ✦* Exp » %exp
@@ -43,7 +43,7 @@ const defaultMenu = {
  ︶︶︶︶︶︶︶︶︶︶︶︶
 
  ︿︿︿︿︿︿︿︿︿︿︿︿
-┊ ❀ 「 `\𝙸𝙽𝙵𝙾 - 𝙱𝙾𝚃`\ 」 ❀
+┊ ❀ 「 \`𝙸𝙽𝙵𝙾 - 𝙱𝙾𝚃\` 」 ❀
  ︶︶︶︶︶︶︶︶︶︶︶︶
 *┊ ✦* Made by » @DevDiego
 *┊ ✦* Bot » %botofc
