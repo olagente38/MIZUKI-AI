@@ -15,7 +15,7 @@ await conn.reply(m.chat, `🚩 *No tienes ningun token activo, usa !jadibot para
 }
 handler.help = ['token']
 handler.command = ['token']
-handler.tags = ['jadibot']
+handler.tags = ['serbot']
 handler.private = true
 
 export default handler 
