@@ -39,7 +39,6 @@ fechaBio = biografia[0].setAt ? new Date(biografia[0].setAt).toLocaleDateString(
   user.name = name + '✓'.trim()
   user.age = age
   user.descripcion = bio 
-  user.edit = fechaBio
   user.regTime = + new Date      
   user.registered = true
   global.db.data.users[m.sender].money += 100
@@ -71,30 +70,26 @@ renderLargerThumbnail: true
 }}}, { quoted: fkontak })
 
 let chtxt = `
- ︿︿︿︿︿︿︿︿︿︿︿︿
-┊ ❀ 「 \`𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙾 𝚄𝚂𝙴𝚁\` 」 ❀
- ︶︶︶︶︶︶︶︶︶︶︶︶ 
-*┊ ✦* 👤 *Usuario* » ${m.pushName || 'Anónimo'}
-*┊ ✦* 🌎 *Pais* » ${mundo}
-*┊ ✦* 🗃 *Verificación* » ${user.name}
-*┊ ✦* 🌺 *Edad* » ${user.age} años
-*┊ ✦* 🍄 *Bot* » 𝙔𝙖𝙚𝙢𝙤𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 ✨️🌸
-*┊ ✦* 📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
-*┊ ✦* ☁️ *Número de registro* »
-*┊ ✦* ⤷ ${sn}
- ︶︶︶︶︶︶︶︶︶︶︶︶
+👤 *Usuario* » ${m.pushName || 'Anónimo'}
+🌎 *Pais* » ${mundo}
+🗃 *Verificación* » ${user.name}
+🌺 *Edad* » ${user.age} años
+👀 *Descripción* » ${user.descripcion} 
+⏳ *Modificación de descripción* » ${fechaBio}
+📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
+☁️ *Número de registro* »
+⤷ ${sn}
 `.trim()
 await conn.sendMessage(global.channelid, { text: chtxt, contextInfo: {
 externalAdReply: {
 title: "【 🔔 𝗡𝗢𝗧𝗜𝗙𝗜𝗖𝗔𝗖𝗜𝗢́𝗡 🔔 】",
-body: user.descripcion,
+body: '🥳 ¡Un usuario nuevo en mi base de datos!',
 thumbnailUrl: perfil,
 sourceUrl: redes,
 mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
 }}}, { quoted: null })
-await conn.reply(channelid, `♻️ *Descripción* »\n> ` + user.descripcion + `\n\n🙌 *Fecha de edición* »\n> ` + user.edit, null, fake)
 }
 handler.help = ['reg']
 handler.tags = ['rg']
