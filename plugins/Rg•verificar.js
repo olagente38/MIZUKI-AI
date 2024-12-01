@@ -83,12 +83,6 @@ let chtxt = `
 *┊ ✦* ☁️ *Número de registro* »
 *┊ ✦* ⤷ ${sn}
  ︶︶︶︶︶︶︶︶︶︶︶︶
-
-♻️ *Descripción* »
-${user.descripcion}
-
-🙌 *Fecha de edición* »
-${user.edit}
 `.trim()
 await conn.sendMessage(global.channelid, { text: chtxt, contextInfo: {
 externalAdReply: {
@@ -100,6 +94,7 @@ mediaType: 1,
 showAdAttribution: false,
 renderLargerThumbnail: false
 }}}, { quoted: null })
+await conn.reply(`♻️ *Descripción* »\n> ` + user.descripcion + `\n\n🙌 *Fecha de edición* »\n> ` + user.edit, null, fake)
 }
 handler.help = ['reg']
 handler.tags = ['rg']
