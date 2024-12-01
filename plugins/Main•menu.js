@@ -37,7 +37,7 @@ const defaultMenu = {
 *┊ ✦* Cliente » %name
 *┊ ✦* Exp » %exp
 *┊ ✦* Pais » %pais
-*┊ ✦* Galletas » %cookies
+*┊ ✦* Chocolates » %chocolates
 *┊ ✦* Nivel » %level
 *┊ ✦* Rango » %role
  ︶︶︶︶︶︶︶︶︶︶︶︶
