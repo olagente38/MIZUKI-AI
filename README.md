@@ -255,7 +255,7 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 |------|-------------|-------|
 | WhatsApp | Canal | [¡Click aquí!](https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A) |
 | WhatsApp | Grupo Oficial | [¡Click aquí!](https://chat.whatsapp.com/DBV1zXbwYjL43uuI6s2Rhu) |
-| WhatsApp | Canal Test | [¡Click aquí!](https://whatsapp.com/channel/0029Vam7yUg77qVaz3sIAp0z) |
+| WhatsApp | Canal Test | [¡Click aquí!](https://whatsapp.com/channel/0029VayCRH2Jf05m1wzaBi1Y) |
 | WhatsApp | Canal Team | [¡Click aquí!](https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A) |
 | WhatsApp | Asistente | [¡Click aquí!](wa.me/573218138672) |
 
