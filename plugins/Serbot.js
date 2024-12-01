@@ -75,5 +75,7 @@ await _envio.sendMessage(m.chat, {text: responseMessage, mentions: _envio.parseM
 break   
 }}
 
+handler.tags = ['jadibot']
+handler.help = ['sockets', 'deletesesion', 'pausarai']
 handler.command = ['deletesesion', 'deletebot', 'deletesession', 'deletesession', 'stop', 'pausarai', 'pausarbot', 'bots', 'sockets', 'socket']
 export default handler
