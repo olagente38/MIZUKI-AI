@@ -70,16 +70,20 @@ renderLargerThumbnail: true
 }}}, { quoted: fkontak })
 
 let chtxt = `
-👤 *Usuario* » ${m.pushName || 'Anónimo'}
-🌎 *Pais* » ${mundo}
-🗃 *Verificación* » ${user.name}
-🌺 *Edad* » ${user.age} años
-👀 *Descripción* » ${user.descripcion} 
-⏳ *Modificación de descripción* » ${fechaBio}
-🍄 *Bot* » 𝙔𝙖𝙚𝙢𝙤𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 ✨️🌸
-📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
-☁️ *Número de registro* »
-⤷ ${sn}
+ ︿︿︿︿︿︿︿︿︿︿︿︿
+┊ ❀ 「 \`𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙾 𝚄𝚂𝙴𝚁 \` 」 ❀
+ ︶︶︶︶︶︶︶︶︶︶︶︶ 
+*┊ ✦* 👤 *Usuario* » ${m.pushName || 'Anónimo'}
+*┊ ✦* 🌎 *Pais* » ${mundo}
+*┊ ✦* 🗃 *Verificación* » ${user.name}
+*┊ ✦* 🌺 *Edad* » ${user.age} años
+*┊ ✦* 👀 *Descripción* » ${user.descripcion} 
+*┊ ✦* ⏳ *Modificación de descripción* » ${fechaBio}
+*┊ ✦* 🍄 *Bot* » 𝙔𝙖𝙚𝙢𝙤𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 ✨️🌸
+*┊ ✦* 📆 *Fecha* » ${moment.tz('America/Bogota').format('DD/MM/YY')}
+*┊ ✦* ☁️ *Número de registro* »
+*┊ ✦* ⤷ ${sn}
+ ︶︶︶︶︶︶︶︶︶︶︶︶
 `.trim()
 await conn.sendMessage(global.channelid, { text: chtxt, contextInfo: {
 externalAdReply: {
