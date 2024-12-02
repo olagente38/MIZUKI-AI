@@ -129,5 +129,5 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 handler.tags = ['fun']
 handler.help = ['proponermatrimonio *@usuario*', 'aceptarmatrimonio', 'rechazarmatrimonio', 'divorciarse *@usuario*']
 handler.command = ['proponermatrimonio', 'aceptarmatrimonio', 'rechazarmatrimonio', 'divorciarse']
-handler.group = true
+//handler.group = true
 export default handler
