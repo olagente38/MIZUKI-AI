@@ -43,7 +43,7 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             break;
 
         case acceptCmd:
-            if (!m.quoted || !proposals[m.quoted.sender]) {
+            if (!m.quoted || !m.quoted.sender || !proposals[m.quoted.sender] || proposals[m.quoted.sender] !== m.sender) {
                 await m.reply('Debes responder al mensaje de propuesta de matrimonio para aceptarla.');
                 return;
             }
@@ -69,7 +69,7 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             break;
 
         case rejectCmd:
-            if (!m.quoted || !proposals[m.quoted.sender]) {
+            if (!m.quoted || !m.quoted.sender || !proposals[m.quoted.sender] || proposals[m.quoted.sender] !== m.sender) {
                 await m.reply('Debes responder al mensaje de propuesta de matrimonio para rechazarla.');
                 return;
             }
@@ -92,13 +92,24 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             break;
 
         case divorceCmd:
-            if (!m.quoted || !marriages[m.sender] || marriages[m.sender] !== m.quoted.sender) {
-                await m.reply('Debes responder al mensaje de tu pareja para divorciarte.');
+            if (!m.mentionedJid || m.mentionedJid.length === 0) {
+                await m.reply('Por favor, menciona a la persona de la que deseas divorciarte.');
                 return;
             }
 
             let divorcingUser = m.sender;
-            let partner = m.quoted.sender;
+            let partner = m.mentionedJid[0];
+
+            if (!marriages[divorcingUser]) {
+                await m.reply('No estás casado con nadie.');
+                return;
+            }
+
+            if (marriages[divorcingUser] !== partner) {
+                let actualPartner = conn.getName(marriages[divorcingUser]);
+                await m.reply(`No estás casado con esta persona. Estás casado con ${actualPartner}.`);
+                return;
+            }
 
             delete marriages[divorcingUser];
             delete marriages[partner];
@@ -106,12 +117,11 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             let divorcingUserName = conn.getName(divorcingUser);
             let partnerName = conn.getName(partner);
 
-            // Anunciar el divorcio en el grupo
             await conn.reply(m.chat, `💔 ${divorcingUserName} y ${partnerName} se han divorciado. 💔`, m);
             break;
 
       //  default:
-        //    await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponermatrimonio* para proponer matrimonio, *${usedPrefix}aceptarmatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarmatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
+         //   await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponermatrimonio* para proponer matrimonio, *${usedPrefix}aceptarmatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarmatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
           //  break;
     }
 }
