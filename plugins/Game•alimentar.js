@@ -75,5 +75,5 @@ let validateHandler = async (m, { conn, args }) => {
 handler.help = ['vincular [codigo|qr]']
 handler.tags = ['tools']
 handler.command = ['vincular']
-handler.group = true
+//handler.group = true
 export default handler
