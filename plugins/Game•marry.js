@@ -38,16 +38,21 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 
             proposals[proposer] = proposee;
 
-            await conn.reply(proposee, `¡${conn.getName(proposer)} te ha propuesto matrimonio! Usa el comando *${usedPrefix}aceptarmatrimonio* para aceptar o *${usedPrefix}rechazarmatrimonio* para rechazar.`, m);
+            await conn.reply(proposee, `¡${conn.getName(proposer)} te ha propuesto matrimonio! Responde a este mensaje con el comando *${usedPrefix}aceptarmatrimonio* para aceptar o *${usedPrefix}rechazarmatrimonio* para rechazar.`, m);
             await m.reply('Tu propuesta de matrimonio ha sido enviada. Espera a que respondan.');
             break;
 
         case acceptCmd:
-            let acceptProposee = m.sender;
-            let proposerKey = Object.keys(proposals).find(key => proposals[key] === acceptProposee);
+            if (!m.quoted || !proposals[m.quoted.sender]) {
+                await m.reply('Debes responder al mensaje de propuesta de matrimonio para aceptarla.');
+                return;
+            }
 
-            if (!proposerKey) {
-                await m.reply('No tienes ninguna propuesta de matrimonio pendiente.');
+            let acceptProposee = m.sender;
+            let proposerKey = m.quoted.sender;
+
+            if (!proposals[proposerKey] || proposals[proposerKey] !== acceptProposee) {
+                await m.reply('No tienes ninguna propuesta de matrimonio pendiente de esta persona.');
                 return;
             }
 
@@ -64,11 +69,16 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             break;
 
         case rejectCmd:
-            let rejectProposee = m.sender;
-            let rejectProposerKey = Object.keys(proposals).find(key => proposals[key] === rejectProposee);
+            if (!m.quoted || !proposals[m.quoted.sender]) {
+                await m.reply('Debes responder al mensaje de propuesta de matrimonio para rechazarla.');
+                return;
+            }
 
-            if (!rejectProposerKey) {
-                await m.reply('No tienes ninguna propuesta de matrimonio pendiente.');
+            let rejectProposee = m.sender;
+            let rejectProposerKey = m.quoted.sender;
+
+            if (!proposals[rejectProposerKey] || proposals[rejectProposerKey] !== rejectProposee) {
+                await m.reply('No tienes ninguna propuesta de matrimonio pendiente de esta persona.');
                 return;
             }
 
@@ -82,18 +92,13 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             break;
 
         case divorceCmd:
-            if (!m.mentionedJid || m.mentionedJid.length === 0) {
-                await m.reply('Por favor, menciona a la persona de la que deseas divorciarte.');
+            if (!m.quoted || !marriages[m.sender] || marriages[m.sender] !== m.quoted.sender) {
+                await m.reply('Debes responder al mensaje de tu pareja para divorciarte.');
                 return;
             }
 
             let divorcingUser = m.sender;
-            let partner = m.mentionedJid[0];
-
-            if (marriages[divorcingUser] !== partner) {
-                await m.reply('No estás casado con esta persona.');
-                return;
-            }
+            let partner = m.quoted.sender;
 
             delete marriages[divorcingUser];
             delete marriages[partner];
@@ -101,8 +106,13 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             let divorcingUserName = conn.getName(divorcingUser);
             let partnerName = conn.getName(partner);
 
+            // Anunciar el divorcio en el grupo
             await conn.reply(m.chat, `💔 ${divorcingUserName} y ${partnerName} se han divorciado. 💔`, m);
             break;
+
+      //  default:
+        //    await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponermatrimonio* para proponer matrimonio, *${usedPrefix}aceptarmatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarmatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
+          //  break;
     }
 }
 
