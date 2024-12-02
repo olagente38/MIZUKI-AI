@@ -17,11 +17,11 @@ global.confirmCode = ''
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-   ['5218713339906', 'Creador 👑', true],
-   ['5218714429807', 'Owner 🍭', true],
-   ['573012482597'],
-   ['5351524614'],
-   ['5218711426787']
+   ['51939249284', 'Creador 👑', true],
+   ['51939249284'],
+   ['51939249284'],
+   ['51939249284'],
+   ['51939249284']
 ]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -62,12 +62,12 @@ global.avatar = fs.readFileSync('./src/img/avatar_contact.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.grupo = 'https://chat.whatsapp.com/GkuIuySiMwb4qJGl3UJtcZ' //YaemoriBot
-global.grupo2 = 'https://chat.whatsapp.com/Ksd32KH9zFoDmO1PJt44M7' //GataBot & YaemoriBot
-global.grupo3 = 'https://chat.whatsapp.com/HjVwC835OWgERQYhspnMW8' //Megumin & YaemoriBot
-global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'
-global.channel2 = 'https://whatsapp.com/channel/0029VayCRH2Jf05m1wzaBi1Y'
-global.channel3 = 'https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A'
+global.grupo = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u' //YaemoriBot
+global.grupo2 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u' //GataBot & YaemoriBot
+global.grupo3 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u' //Megumin & YaemoriBot
+global.channel = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+global.channel2 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+global.channel3 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 global.md = 'https://github.com/OfcKing/YaemoriBot-MD' 
 global.yt = 'https://www.youtube.com/@OfcDiego'
 global.tiktok = 'https://tiktok.com/@dev_diego'
@@ -80,13 +80,13 @@ global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(fa
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.ch = {
-ch1: '120363370415738881@newsletter',
-ch2: '120363263466636910@newsletter',
-ch3: '120363160031023229@newsletter',
-ch4: '120363307382381547@newsletter',
-ch5: '120363301598733462@newsletter',
-ch6: '120363371018732371@newsletter',
-ch7: '120363350554513092@newsletter',
+ch1: '120363316264159575@newsletter',
+ch2: '120363316264159575@newsletter',
+ch3: '120363316264159575@newsletter',
+ch4: '120363316264159575@newsletter',
+ch5: '120363316264159575@newsletter',
+ch6: '120363316264159575@newsletter',
+ch7: '120363316264159575@newsletter',
 }
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
