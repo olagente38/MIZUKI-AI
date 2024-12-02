@@ -5,10 +5,10 @@ import path, { join } from 'path';
 let proposals = {}; // Objeto para almacenar las propuestas de matrimonio
 let marriages = {}; // Objeto para almacenar los matrimonios
 
-let handler = async (m, { conn, command, usedPrefix, args, isOwner }) => {
-    const proposeCmd = /^(proponerMatrimonio)$/i.test(command);
-    const acceptCmd = /^(aceptarMatrimonio)$/i.test(command);
-    const rejectCmd = /^(rechazarMatrimonio)$/i.test(command);
+let handler = async (m, { conn, command, usedPrefix, args }) => {
+    const proposeCmd = /^(proponermatrimonio)$/i.test(command);
+    const acceptCmd = /^(aceptarmatrimonio)$/i.test(command);
+    const rejectCmd = /^(rechazarmatrimonio)$/i.test(command);
     const divorceCmd = /^(divorciarse)$/i.test(command);
 
     async function reportError(e) {
@@ -38,7 +38,7 @@ let handler = async (m, { conn, command, usedPrefix, args, isOwner }) => {
 
             proposals[proposer] = proposee;
 
-            await conn.reply(proposee, `¡${conn.getName(proposer)} te ha propuesto matrimonio! Usa el comando *${usedPrefix}aceptarMatrimonio* para aceptar o *${usedPrefix}rechazarMatrimonio* para rechazar.`, m);
+            await conn.reply(proposee, `¡${conn.getName(proposer)} te ha propuesto matrimonio! Usa el comando *${usedPrefix}aceptarmatrimonio* para aceptar o *${usedPrefix}rechazarmatrimonio* para rechazar.`, m);
             await m.reply('Tu propuesta de matrimonio ha sido enviada. Espera a que respondan.');
             break;
 
@@ -56,6 +56,7 @@ let handler = async (m, { conn, command, usedPrefix, args, isOwner }) => {
             let proposerName = conn.getName(proposerKey);
             let proposeeName = conn.getName(acceptProposee);
 
+            // Añadir el matrimonio a la lista de matrimonios
             marriages[proposerKey] = acceptProposee;
             marriages[acceptProposee] = proposerKey;
 
@@ -102,15 +103,11 @@ let handler = async (m, { conn, command, usedPrefix, args, isOwner }) => {
 
             await conn.reply(m.chat, `💔 ${divorcingUserName} y ${partnerName} se han divorciado. 💔`, m);
             break;
-
-        default:
-            await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponerMatrimonio* para proponer matrimonio, *${usedPrefix}aceptarMatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarMatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
-            break;
     }
 }
 
 handler.tags = ['fun']
-handler.help = ['proponerMatrimonio *@usuario*', 'aceptarMatrimonio', 'rechazarMatrimonio', 'divorciarse *@usuario*']
-handler.command = ['proponerMatrimonio', 'aceptarMatrimonio', 'rechazarMatrimonio', 'divorciarse']
+handler.help = ['proponermatrimonio *@usuario*', 'aceptarmatrimonio', 'rechazarmatrimonio', 'divorciarse *@usuario*']
+handler.command = ['proponermatrimonio', 'aceptarmatrimonio', 'rechazarmatrimonio', 'divorciarse']
 handler.group = true
 export default handler
