@@ -51,6 +51,11 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             let acceptProposee = m.sender;
             let proposerKey = m.quoted.sender;
 
+            if (!proposals[proposerKey] || proposals[proposerKey] !== acceptProposee) {
+                await m.reply('No tienes ninguna propuesta de matrimonio pendiente de esta persona.');
+                return;
+            }
+
             delete proposals[proposerKey];
 
             let proposerName = conn.getName(proposerKey);
@@ -71,6 +76,11 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 
             let rejectProposee = m.sender;
             let rejectProposerKey = m.quoted.sender;
+
+            if (!proposals[rejectProposerKey] || proposals[rejectProposerKey] !== rejectProposee) {
+                await m.reply('No tienes ninguna propuesta de matrimonio pendiente de esta persona.');
+                return;
+            }
 
             delete proposals[rejectProposerKey];
 
@@ -111,8 +121,8 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             break;
 
       //  default:
-         //   await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponermatrimonio* para proponer matrimonio, *${usedPrefix}aceptarmatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarmatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
-           // break;
+          //  await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponermatrimonio* para proponer matrimonio, *${usedPrefix}aceptarmatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarmatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
+          //  break;
     }
 }
 
