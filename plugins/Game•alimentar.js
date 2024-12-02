@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+import fs from 'fs'
 import qrcode from 'qrcode'
 
 let subBotCodes = {} // Objeto para almacenar los códigos generados y su estado
@@ -27,7 +27,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         let code = generateSubBotCode()
         subBotCodes[code] = true // Marcar el código como válido y no utilizado
 
-        qrcode.toDataURL(code, (err, url) => {
+        qrcode.toDataURL(code, async (err, url) => {
             if (err) {
                 console.error(err)
                 m.reply('Hubo un problema al generar el código QR. Por favor, intenta nuevamente más tarde.')
@@ -35,7 +35,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             }
 
             let caption = `Escanea este código QR para vincular:\nCódigo: ${code}`
-            conn.sendMessage(m.chat, { url }, 'image', { caption, quoted: m })
+            await conn.sendMessage(m.chat, { url }, 'image', { caption, quoted: m })
         })
     } else {
         await m.reply(`Opción no válida. Usa *${usedPrefix}${command} [codigo|qr]*`)
@@ -75,5 +75,11 @@ let validateHandler = async (m, { conn, args }) => {
 handler.help = ['vincular [codigo|qr]']
 handler.tags = ['tools']
 handler.command = ['vincular']
-//handler.group = true
+handler.group = true
 export default handler
+
+validateHandler.help = ['serSubBot']
+validateHandler.tags = ['tools']
+validateHandler.command = ['serSubBot']
+validateHandler.group = true
+export default validateHandler
