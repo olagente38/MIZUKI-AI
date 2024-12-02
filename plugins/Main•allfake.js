@@ -28,17 +28,17 @@ console.log(`Error : ${e}`)
 }}
 
 //creador y otros
-global.creador = 'Wa.me/5493876432076'
+global.creador = 'Wa.me/51939249284'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
-global.asistencia = 'https://wa.me/message/O4QPPHZOFDOJI1'
-global.namechannel = '© All Rightd Reserved • YaemoriBot'
+global.asistencia = 'https://wa.me/51939249284'
+global.namechannel = 'SPECTRUM OFICIAL'
 global.listo = '✨️ *Aquí tienes ฅ^•ﻌ•^ฅ*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
 
 //ids channel
-global.channelid = '120363370415738881@newsletter'
-global.canalIdYL = ["120363160031023229@newsletter", "120363370415738881@newsletter", "120363263466636910@newsletter", "120363307382381547@newsletter", "120363301598733462@newsletter", "120363371018732371@newsletter"]
-global.canalNombreYL = ["INFINITY-WA 💫", "YaemoriBot - Notify 🍄", "© All Rightd Reserved • YaemoriBot", "Megumin Bot - Channel 💥", "Sky Ultra Plus ☁️", "Hutao - Test ❤️‍🔥"]
+global.channelid = '120363316264159575@newsletter'
+global.canalIdYL = ["120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter"]
+global.canalNombreYL = ["SPECTRUM OFICIAL 💫", "SPECTRUM OFICIAL 🍄", "SPECTRUM OFICIAL", "SPECTRUM OFICIAL 💥", "SPECTRUM OFICIAL ☁️", "SPECTRUM OFICIAL"]
 global.channelRD = await getRandomChannel()
 
 //fechas
@@ -64,10 +64,10 @@ global.wait = '🚀 Cargando...'
 global.emojis = [emoji, emoji2, emoji3, emoji4, emoji5].getRandom()
 
 //Enlaces
-var canal = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'
-var canal2 = 'https://whatsapp.com/channel/0029VayCRH2Jf05m1wzaBi1Y'
-var canal3 = 'https://whatsapp.com/channel/0029Va4QjH7DeON0ePwzjS1A'
-var canal4 = 'https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g'
+var canal = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+var canal2 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+var canal3 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+var canal4 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 var git = 'https://github.com/OfcKing' 
 var youtube = 'https://www.youtube.com/@OfcDiego' 
 var github = 'https://github.com/OfcKing/YaemoriBot-MD'  
