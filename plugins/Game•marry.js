@@ -26,6 +26,16 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             let proposer = m.sender;
             let proposee = m.mentionedJid[0];
 
+            if (marriages[proposer]) {
+                await m.reply(`Ya estás casado con ${conn.getName(marriages[proposer])}. No puedes proponer matrimonio a otra persona.`);
+                return;
+            }
+
+            if (marriages[proposee]) {
+                await m.reply(`${conn.getName(proposee)} ya está casado con ${conn.getName(marriages[proposee])}. No puedes proponer matrimonio a alguien que ya está casado.`);
+                return;
+            }
+
             if (proposer === proposee) {
                 await m.reply('¡No puedes proponerte matrimonio a ti mismo!');
                 return;
@@ -51,8 +61,9 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             let acceptProposee = m.sender;
             let proposerKey = m.quoted.sender;
 
-            if (!proposals[proposerKey] || proposals[proposerKey] !== acceptProposee) {
-                await m.reply('No tienes ninguna propuesta de matrimonio pendiente de esta persona.');
+            if (marriages[acceptProposee]) {
+                let currentPartner = conn.getName(marriages[acceptProposee]);
+                await m.reply(`Ya estás casado con ${currentPartner}. No puedes aceptar otra propuesta de matrimonio.`);
                 return;
             }
 
@@ -121,7 +132,7 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
             break;
 
       //  default:
-          //  await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponermatrimonio* para proponer matrimonio, *${usedPrefix}aceptarmatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarmatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
+           // await m.reply(`Comando no reconocido. Usa *${usedPrefix}proponermatrimonio* para proponer matrimonio, *${usedPrefix}aceptarmatrimonio* para aceptar una propuesta, *${usedPrefix}rechazarmatrimonio* para rechazar una propuesta y *${usedPrefix}divorciarse* para divorciarse.`);
           //  break;
     }
 }
@@ -129,5 +140,5 @@ let handler = async (m, { conn, command, usedPrefix, args }) => {
 handler.tags = ['fun']
 handler.help = ['proponermatrimonio *@usuario*', 'aceptarmatrimonio', 'rechazarmatrimonio', 'divorciarse *@usuario*']
 handler.command = ['proponermatrimonio', 'aceptarmatrimonio', 'rechazarmatrimonio', 'divorciarse']
-//handler.group = true
+handler.group = true
 export default handler
