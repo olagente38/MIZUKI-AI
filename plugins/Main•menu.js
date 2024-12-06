@@ -29,7 +29,7 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `Hola %taguser 👋, Soy YaemoriBot
+  before: `Hola %taguser 👋, Soy Spectrum AI 
 
  ︿︿︿︿︿︿︿︿︿︿︿︿
 ┊ ❀ 「 \`𝙸𝙽𝙵𝙾 - 𝚄𝚂𝙴𝚁\` 」 ❀
@@ -158,8 +158,8 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
-let img = ['https://qu.ax/zzWdD.jpg', 'https://qu.ax/LkHoh.jpg', 'https://qu.ax/JceST.jpg']
+let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/HOchr.jpeg')
+let img = ['https://qu.ax/HOchr.jpeg', 'https://qu.ax/HOchr.jpeg', 'https://qu.ax/HOchr.jpeg']
 
 await m.react(emojis) 
 
