@@ -38,7 +38,7 @@ global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => '
 //ids channel
 global.channelid = '120363316264159575@newsletter'
 global.canalIdYL = ["120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter"]
-global.canalNombreYL = ["·.★·.·´¯`·.·👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑·.·´¯`·.·★.·"]
+global.canalNombreYL = ["🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺"]
 global.channelRD = await getRandomChannel()
 
 //fechas
@@ -68,14 +68,14 @@ var canal = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 var canal2 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 var canal3 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 var canal4 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
-var git = 'https://github.com/SpectrumOfc' 
-var youtube = 'https://www.youtube.com/' 
-var github = 'https://github.com/SpectrumOfc'  
-var dash = 'https://github.com/SpectrumOfc'
-var panel = 'https://github.com/SpectrumOfc'
-var status = 'https://github.com/SpectrumOfc'
-var discord = 'https://discord.gg/'
-let tiktok = 'https://tiktok.com/'
+var git = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u' 
+var youtube = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u' 
+var github = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'  
+var dash = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+var panel = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+var status = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+var discord = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+let tiktok = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 let correo = 'cuentaoficialspectrum@gmail.com'
 
 global.redes = [canal, canal2, canal3, canal4, git, youtube, github, dash, panel, status, discord, tiktok, correo].getRandom()
