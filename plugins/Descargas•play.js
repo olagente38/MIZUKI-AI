@@ -18,16 +18,18 @@ previewType: 0, thumbnail: icons,
 sourceUrl: channel }}});
 const yt_play = await search(args.join(' '));
 const ytplay2 = await yts(text);
-const texto1 = `🚩 *Título* 
+const texto1 = `★¸.•☆•.¸★ 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 | 𝐏𝐋𝐀𝐘 ★⡀.•☆•.★
+
+[🍿] *𝐓Í𝐓𝐔𝐋𝐎:* 
 » ${yt_play[0].title}
 
-📆 *Publicado* 
+[📆] *𝐏𝐔𝐁𝐋𝐈𝐂𝐀𝐃𝐎:* 
 » ${yt_play[0].ago}
 
-🕑 *Duración* 
+[⌛] *𝐃𝐔𝐑𝐀𝐂𝐈Ó𝐍:* 
 » ${secondString(yt_play[0].duration.seconds)}
 
-> _Descargado el audio 🔊, aguarde un momento...._`.trim();
+`.trim();
 
 await conn.sendFile(m.chat, yt_play[0].thumbnail, 'error.jpg', texto1, m, null, rcanal);
 try {
@@ -87,7 +89,7 @@ console.log(e);
 }}}}}}}
 
 if (command == 'play2' || command == 'mp4') {
-if (!text) return conn.reply(m.chat, `🚩 *Ingrese el nombre de un video de YouTube*\n\nEjemplo, !${command} Distancia - Kimberly Contreraxx`,  m, rcanal, );
+if (!text) return conn.reply(m.chat, `[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐈𝐧𝐭𝐞𝐧𝐭𝐞 𝐧𝐮𝐞𝐯𝐚𝐦𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐚 𝐯𝐞𝐳 𝐩𝐫𝐨𝐩𝐨𝐫𝐜𝐢𝐨𝐧𝐚𝐧𝐝𝐨 𝐮𝐧 𝐭í𝐭𝐮𝐥𝐨 𝐝𝐞 𝐯𝐢𝐝𝐞𝐨 𝐝𝐞 𝐘𝐨𝐮𝐓𝐮𝐛𝐞.\n\n[✅] 𝐄𝐣𝐞𝐦𝐩𝐥𝐨: */${command}* 𝐔𝐧 𝐚𝐦𝐨𝐫 𝐝𝐞𝐥 𝐚𝐲𝐞𝐫`,  m, rcanal, );
 await m.react(rwait);
 conn.reply(m.chat, global.wait, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
