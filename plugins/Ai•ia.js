@@ -35,10 +35,10 @@ await m.react(done)
 await m.react(error)
 await conn.reply(m.chat, '✘ ChatGpT no puede responder a esa pregunta.', m, fake)}}}
 
-handler.help = ['ai2', 'chatgpt']
+handler.help = ['ai2', 'chatgpt2']
 handler.tags = ['ia2']
 handler.register = true
-handler.command = ['ai2', 'chatgpt']
+handler.command = ['ai2', 'ia2', 'chatgpt2']
 
 export default handler
 
