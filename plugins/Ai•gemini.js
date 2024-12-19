@@ -13,8 +13,8 @@ await m.react(done)
 await m.react(error)
 await conn.reply(m.chat, `[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐌𝐢𝐳𝐮𝐤𝐢 𝐀𝐈 𝐧𝐨 𝐩𝐮𝐞𝐝𝐞 𝐫𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐚 𝐞𝐬𝐚 𝐜𝐨𝐧𝐬𝐮𝐥𝐭𝐚.`, m, rcanal)
 }}
-handler.command = ['ai']
-handler.help = ['ia']
+handler.command = /^(ai|ia)$/i;
+handler.help = ['ai']
 handler.tags = ['ai']
 
 export default handler
