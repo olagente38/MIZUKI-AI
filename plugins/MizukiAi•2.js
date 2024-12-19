@@ -22,10 +22,10 @@ await conn.reply(m.chat, description, m, fake)
 await m.react(error)
 await conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐌𝐢𝐳𝐮𝐤𝐢 𝐀𝐈 𝐧𝐨 𝐩𝐮𝐝𝐨 𝐚𝐧𝐚𝐥𝐢𝐳𝐚𝐫 𝐥𝐚 𝐢𝐦𝐚𝐠𝐞𝐧.', m, fake)}
 } else {
-if (!text) { return conn.reply(m.chat, `[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐈𝐧𝐭𝐞𝐧𝐭𝐞 𝐧𝐮𝐞𝐯𝐚𝐦𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐚 𝐯𝐞𝐳 𝐩𝐫𝐨𝐩𝐨𝐫𝐜𝐢𝐨𝐧𝐚𝐧𝐝𝐨 𝐮𝐧 𝐭í𝐭𝐮𝐥𝐨 𝐝𝐞 𝐯𝐢𝐝𝐞𝐨 𝐝𝐞 𝐘𝐨𝐮𝐓𝐮𝐛𝐞.\n\n[✅] 𝐄𝐣𝐞𝐦𝐩𝐥𝐨: */${command}* 𝐔𝐧 𝐚𝐦𝐨𝐫 𝐝𝐞𝐥 𝐚𝐲𝐞𝐫`, m)}
+if (!text) { return conn.reply(m.chat, `[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐈𝐧𝐭𝐞𝐧𝐭𝐞 𝐧𝐮𝐞𝐯𝐚𝐦𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐚 𝐯𝐞𝐳 𝐩𝐫𝐨𝐩𝐨𝐫𝐜𝐢𝐨𝐧𝐚𝐧𝐝𝐨 𝐮𝐧 𝐦𝐞𝐧𝐬𝐚𝐣𝐞 𝐝𝐞 𝐜𝐨𝐧𝐬𝐮𝐥𝐭𝐚.\n\n[✅] 𝐄𝐣𝐞𝐦𝐩𝐥𝐨: */${command}* *¿𝐂ó𝐦𝐨 𝐞𝐬𝐭á𝐬 𝐡𝐨𝐲?*`, m)}
 await m.react(rwait)
 try {
-const { key } = await conn.sendMessage(m.chat, {text: `❀ La AI de Benjamin está procesando tu petición, espera unos segundos.`}, {quoted: m})
+const { key } = await conn.sendMessage(m.chat, {text: `[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐞𝐧 𝐩𝐫𝐨𝐜𝐞𝐬𝐨. 𝐌𝐢𝐳𝐮𝐤𝐢 𝐀𝐈 𝐞𝐬𝐭á 𝐩𝐫𝐨𝐜𝐞𝐬𝐚𝐧𝐝𝐨 𝐭𝐮 𝐩𝐞𝐭𝐢𝐜𝐢ó𝐧, 𝐞𝐬𝐩𝐞𝐫𝐚 𝐮𝐧𝐨𝐬 𝐬𝐞𝐠𝐮𝐧𝐝𝐨𝐬.`}, {quoted: m})
 const query = text
 const prompt = `${basePrompt}. Responde lo siguiente: ${query}`
 const response = await luminsesi(query, username, prompt)
@@ -33,7 +33,7 @@ await conn.sendMessage(m.chat, {text: response, edit: key})
 await m.react(done)
 } catch {
 await m.react(error)
-await conn.reply(m.chat, '✘ ChatGpT no puede responder a esa pregunta.', m, fake)}}}
+await conn.reply(m.chat, '[🚨] 𝐌𝐢𝐳𝐮𝐤𝐢 𝐀𝐈 𝐧𝐨 𝐩𝐮𝐞𝐝𝐞 𝐫𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐚 𝐞𝐬𝐚 𝐩𝐫𝐞𝐠𝐮𝐧𝐭𝐚.', m, fake)}}}
 
 handler.help = ['ai2', 'chatgpt2']
 handler.tags = ['ia2']
