@@ -158,12 +158,12 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/EdVOx.jpg')
-let img = ['https://qu.ax/EdVOx.jpg', 'https://qu.ax/EdVOx.jpg', 'https://qu.ax/EdVOx.jpg']
+let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/eOTEH.jpeg')
+let img = ['https://qu.ax/eOTEH.jpeg', 'https://qu.ax/eOTEH.jpeg', 'https://qu.ax/eOTEH.jpeg']
 
 await m.react(emojis) 
 
-await conn.sendMessage(m.chat, { image: { url: img.getRandom() }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, newsletterName: channelRD.name, serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺', body: dev, thumbnailUrl: perfil, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
+await conn.sendMessage(m.chat, { image: { url: img.getRandom() }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, newsletterName: channelRD.name, serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: '📚 𝐌𝐄𝐍Ú 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐎 📚', body: dev, thumbnailUrl: perfil, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
 }, }, gifPlayback: true, gifAttribution: 0 }, { quoted: null })
 
   } catch (e) {
