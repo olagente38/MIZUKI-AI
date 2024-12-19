@@ -29,9 +29,9 @@ console.log(`Error : ${e}`)
 
 //creador y otros
 global.creador = 'Wa.me/51939249284'
-global.ofcbot = `${conn.user.jid.split('@')[0]}`
+global.ofcbot = `🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺`
 global.asistencia = 'https://wa.me/51939249284'
-global.namechannel = '·.★·.·´¯`·.·👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑·.·´¯`·.·★.·'
+global.namechannel = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
 global.listo = '✨️ *Aquí tienes ฅ^•ﻌ•^ฅ*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
 
