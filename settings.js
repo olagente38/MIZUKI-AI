@@ -36,19 +36,19 @@ global.libreria = 'Baileys'
 global.baileys = 'V 6.7.5'
 global.vs = '2.0.7'
 global.vsJB = '5.0'
-global.nameqr = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
-global.namebot = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.nameqr = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
+global.namebot = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
 global.sessions = 'MiniSession'
 global.jadi = 'MiniJadiBot'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
-global.botname = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
-global.wm = '·🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
-global.author = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
-global.dev = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
-global.textbot = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.packname = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
+global.botname = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
+global.wm = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
+global.author = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
+global.dev = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
+global.textbot = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
