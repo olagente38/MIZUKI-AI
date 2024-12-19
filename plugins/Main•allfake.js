@@ -29,16 +29,16 @@ console.log(`Error : ${e}`)
 
 //creador y otros
 global.creador = 'Wa.me/51939249284'
-global.ofcbot = `🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺`
+global.ofcbot = `🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 🌺`
 global.asistencia = 'https://wa.me/51939249284'
-global.namechannel = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.namechannel = '🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 | 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌺'
 global.listo = '✨️ *Aquí tienes ฅ^•ﻌ•^ฅ*'
-global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://qu.ax/QGAVS.jpg')
+global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://qu.ax/eOTEH.jpeg')
 
 //ids channel
 global.channelid = '120363316264159575@newsletter'
 global.canalIdYL = ["120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter", "120363316264159575@newsletter"]
-global.canalNombreYL = ["🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺"]
+global.canalNombreYL = ["🌺 𝐌𝐈𝐙𝐔𝐊𝐈 𝐀𝐈 | 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🌺"]
 global.channelRD = await getRandomChannel()
 
 //fechas
@@ -109,9 +109,9 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 }}, { quoted: m }
 
 global.icono = [ 
-'https://qu.ax/fhRLq.jpg',
-'https://qu.ax/fhRLq.jpg',
-'https://qu.ax/fhRLq.jpg'
+'https://qu.ax/eOTEH.jpeg',
+'https://qu.ax/eOTEH.jpeg',
+'https://qu.ax/eOTEH.jpeg'
 ].getRandom()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, externalAdReply: { showAdAttribution: true, title: namebot, body: dev, mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
