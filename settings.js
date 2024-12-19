@@ -36,19 +36,19 @@ global.libreria = 'Baileys'
 global.baileys = 'V 6.7.5'
 global.vs = '2.0.7'
 global.vsJB = '5.0'
-global.nameqr = 'Ai Yaemori - MD'
-global.namebot = 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ'
+global.nameqr = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.namebot = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
 global.sessions = 'MiniSession'
 global.jadi = 'MiniJadiBot'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑'
-global.botname = '👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑'
-global.wm = '·👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑'
-global.author = '👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑'
-global.dev = '👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑'
-global.textbot = '👑 𝐒𝐏𝐄𝐂𝐓𝐑𝐔𝐌 𝐀𝐈 👑'
+global.packname = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.botname = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.wm = '·🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.author = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.dev = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
+global.textbot = '🌺 𝐌𝐢𝐤𝐚𝐬𝐚 𝐀𝐈 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🌺'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -69,9 +69,9 @@ global.grupo3 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 global.channel = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 global.channel2 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 global.channel3 = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
-global.md = 'https://github.com/SpectrumOfc' 
-global.yt = 'https://www.youtube.com/'
-global.tiktok = 'https://tiktok.com/'
+global.md = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u' 
+global.yt = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
+global.tiktok = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u'
 global.correo = 'cuentaoficialspectrum@gmail.com'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
