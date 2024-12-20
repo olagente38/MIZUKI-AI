@@ -9,8 +9,7 @@ if (!res.ok) return conn.reply(m.chat, `[🚨] 𝐎𝐜𝐮𝐫𝐫𝐢ó 𝐮�
 let json = await res.json()
 let { chapters, title_japanese, url, type, score, members, background, status, volumes, synopsis, favorites } = json.data[0]
 let author = json.data[0].authors[0].name
-let animeingfo = `
-🎬» 𝐓Í𝐓𝐔𝐋𝐎: ${title_japanese}
+let animeingfo = `🎬» 𝐓Í𝐓𝐔𝐋𝐎: ${title_japanese}
 📖» 𝐂𝐀𝐏Í𝐓𝐔𝐋𝐎 ${chapters}
 📡» 𝐓𝐑𝐀𝐍𝐒𝐌𝐈𝐒𝐈Ó𝐍: ${type}
 📊» 𝐄𝐒𝐓𝐀𝐃𝐎: ${status}
