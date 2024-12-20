@@ -10,18 +10,18 @@ const json = await res.json()
 if (res.status !== 200) throw json
 let str = json.items.map((repo, index) => {
 return `
-🏁 *𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎:* ${1 + index}
-🔗 *𝐄𝐍𝐋𝐀𝐂𝐄:* ${repo.html_url}
-👨‍🎨 *𝐂𝐑𝐄𝐀𝐃𝐎𝐑:* ${repo.owner.login}
-🏷️ *𝐍𝐎𝐌𝐁𝐑𝐄:* ${repo.name}
-🛠️ *𝐂𝐑𝐄𝐀𝐃𝐎:* ${formatDate(repo.created_at)}
-🔄 *𝐀𝐂𝐓𝐔𝐀𝐋𝐈𝐙𝐀𝐃𝐎:* ${formatDate(repo.updated_at)}
-👀 *𝐕𝐈𝐒𝐈𝐓𝐀𝐒:* ${repo.watchers}
-🌿 *𝐁𝐈𝐅𝐔𝐑𝐂𝐀𝐃𝐎:* ${repo.forks}
-⭐ *𝐄𝐒𝐓𝐑𝐄𝐋𝐋𝐀𝐒:* ${repo.stargazers_count}
-❗ *𝐈𝐒𝐒𝐔𝐄𝐒:* ${repo.open_issues}
-📝 *𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐂𝐈Ó𝐍:* ${repo.description ? `${repo.description}` : 'Sin Descripción'}
-🧬 *𝐂𝐋𝐎𝐍𝐄:* ${repo.clone_url}
+🏁» *𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎:* ${1 + index}
+🔗» *𝐄𝐍𝐋𝐀𝐂𝐄:* ${repo.html_url}
+👨‍🎨» *𝐂𝐑𝐄𝐀𝐃𝐎𝐑:* ${repo.owner.login}
+🏷️» *𝐍𝐎𝐌𝐁𝐑𝐄:* ${repo.name}
+🛠️» *𝐂𝐑𝐄𝐀𝐃𝐎:* ${formatDate(repo.created_at)}
+🔄» *𝐀𝐂𝐓𝐔𝐀𝐋𝐈𝐙𝐀𝐃𝐎:* ${formatDate(repo.updated_at)}
+👀» *𝐕𝐈𝐒𝐈𝐓𝐀𝐒:* ${repo.watchers}
+🌿» *𝐁𝐈𝐅𝐔𝐑𝐂𝐀𝐃𝐎:* ${repo.forks}
+⭐» *𝐄𝐒𝐓𝐑𝐄𝐋𝐋𝐀𝐒:* ${repo.stargazers_count}
+❗» *𝐈𝐒𝐒𝐔𝐄𝐒:* ${repo.open_issues}
+📝» *𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐂𝐈Ó𝐍:* ${repo.description ? `${repo.description}` : 'Sin Descripción'}
+🧬» *𝐂𝐋𝐎𝐍𝐄:* ${repo.clone_url}
 `.trim()}).join('\n\n─────────────────\n\n') 
 // await m.react(done)
 let img = await (await fetch(json.items[0].owner.avatar_url)).buffer()
