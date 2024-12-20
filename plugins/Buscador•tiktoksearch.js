@@ -45,7 +45,7 @@ deviceListMetadataVersion: 2
 },
 interactiveMessage: proto.Message.InteractiveMessage.fromObject({
 body: proto.Message.InteractiveMessage.Body.create({ text: '📝 𝐒𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫𝐨𝐧 𝐫𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨𝐬 𝐝𝐞 𝐓𝐢𝐤𝐓𝐨𝐤𝐬 𝐬𝐨𝐛𝐫𝐞: ' + text }),
-footer: proto.Message.InteractiveMessage.Footer.create({ text: '🔎 Tiktok - Busquedas' }),
+footer: proto.Message.InteractiveMessage.Footer.create({ text: '★¸.•☆•.¸★ 𝐓𝐈𝐊𝐓𝐎𝐊 | 𝐒𝐄𝐀𝐑𝐂𝐇 ★⡀.•☆•.★' }),
 header: proto.Message.InteractiveMessage.Header.create({ hasMediaAttachment: false }),
 carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.fromObject({ cards: [...results] })})}}
 }, { quoted: message })
