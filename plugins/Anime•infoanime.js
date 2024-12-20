@@ -22,7 +22,7 @@ let animeingfo = `🎬» 𝐓Í𝐓𝐔𝐋𝐎: ${title_japanese}
 🖼️» 𝐅𝐎𝐍𝐃𝐎: ${background}
 📝» 𝐒𝐈𝐍𝐎𝐏𝐒𝐈𝐒: ${synopsis}
  ` 
-conn.sendFile(m.chat, json.data[0].images.jpg.image_url, 'anjime.jpg', '★¸.•☆•.¸★ 𝐈𝐍𝐅𝐎 | 𝐀𝐍𝐈𝐌𝐄 ★⡀.•☆•.★\n\n' + animeingfo, fkontak, m)
+conn.sendFile(m.chat, json.data[0].images.jpg.image_url, 'anjime.jpg', '★¸.•☆•.¸★ 𝐈𝐍𝐅𝐎 | 𝐀𝐍𝐈𝐌𝐄 ★⡀.•☆•.★\n\n' + animeingfo, fkontak, m, rcanal, )
 
 } 
 handler.help = ['infoanime'] 
