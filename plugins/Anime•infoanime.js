@@ -9,21 +9,21 @@ if (!res.ok) return conn.reply(m.chat, `[🚨] 𝐎𝐜𝐮𝐫𝐫𝐢ó 𝐮�
 let json = await res.json()
 let { chapters, title_japanese, url, type, score, members, background, status, volumes, synopsis, favorites } = json.data[0]
 let author = json.data[0].authors[0].name
-let animeingfo = `★¸.•☆•.¸★ 𝐈𝐍𝐅𝐎 | 𝐀𝐍𝐈𝐌𝐄 ★⡀.•☆•.★
-[🎬]» Título: ${title_japanese}
-[📖]» Capítulo: ${chapters}
-[📡]» Transmisión: ${type}
-[📊]» Estado: ${status}
-[📚]» Volumes: ${volumes}
-[⭐]» Favorito: ${favorites}
-[🏅]» Puntaje: ${score}
-[👥]» Miembros: ${members}
-[🔗]» Url: ${url}
-[✍️]» Autor: ${author}
-[🖼️]» Fondo: ${background}
-[📝]» Sinopsis: ${synopsis}
+let animeingfo = `
+🎬» 𝐓Í𝐓𝐔𝐋𝐎: ${title_japanese}
+📖» 𝐂𝐀𝐏Í𝐓𝐔𝐋𝐎 ${chapters}
+📡» 𝐓𝐑𝐀𝐍𝐒𝐌𝐈𝐒𝐈Ó𝐍: ${type}
+📊» 𝐄𝐒𝐓𝐀𝐃𝐎: ${status}
+📚» 𝐕𝐎𝐋𝐔𝐌𝐄𝐒: ${volumes}
+⭐» 𝐅𝐀𝐕𝐎𝐑𝐈𝐓𝐎: ${favorites}
+🏅» 𝐏𝐔𝐍𝐓𝐀𝐉𝐄: ${score}
+👥» 𝐌𝐈𝐄𝐌𝐁𝐑𝐎𝐒: ${members}
+🔗» 𝐔𝐑𝐋: ${url}
+✍️» 𝐀𝐔𝐓𝐎𝐑: ${author}
+🖼️» 𝐅𝐎𝐍𝐃𝐎: ${background}
+📝» 𝐒𝐈𝐍𝐎𝐏𝐒𝐈𝐒: ${synopsis}
  ` 
-conn.sendFile(m.chat, json.data[0].images.jpg.image_url, 'anjime.jpg', '      🚩 *I N F O - A N I M E* 🚩\n\n' + animeingfo, fkontak, m)
+conn.sendFile(m.chat, json.data[0].images.jpg.image_url, 'anjime.jpg', '★¸.•☆•.¸★ 𝐈𝐍𝐅𝐎 | 𝐀𝐍𝐈𝐌𝐄 ★⡀.•☆•.★\n\n' + animeingfo, fkontak, m)
 
 } 
 handler.help = ['infoanime'] 
