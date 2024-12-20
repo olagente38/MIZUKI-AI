@@ -29,7 +29,7 @@ await conn.sendMini(m.chat, '★¸.•☆•.¸★ 𝐆𝐈𝐓𝐇𝐔𝐁 | �
 await m.react(done)
 } catch {
 await m.react(error)
-conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐍𝐨 𝐬𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫𝐨𝐧 𝐫𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨𝐬 𝐜𝐨𝐧 𝐞𝐬𝐞 𝐧𝐨𝐦𝐛𝐫𝐞.' + text, m, fake)}}
+conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐍𝐨 𝐬𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫𝐨𝐧 𝐫𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨𝐬 𝐜𝐨𝐧 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞 𝐫𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐢𝐨: ' + text, m, fake)}}
 handler.help = ['githubsearch']
 handler.tags = ['buscador']
 handler.command = ['githubsearch']
