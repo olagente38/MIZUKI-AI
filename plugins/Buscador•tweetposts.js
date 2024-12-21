@@ -45,7 +45,7 @@ const msg = generateWAMessageFromContent(m.chat, {viewOnceMessage: {
 message: {
 messageContextInfo: {deviceListMetadata: {},deviceListMetadataVersion: 4},
 interactiveMessage: proto.Message.InteractiveMessage.create({
-body: proto.Message.InteractiveMessage.Body.create({text: `🚩 Resultado de : ${text}\n🔎 Tweetposts - Busquedas`}),
+body: proto.Message.InteractiveMessage.Body.create({text: `📝 𝐒𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫𝐨𝐧 𝐫𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨𝐬 𝐝𝐞 𝐓𝐰𝐢𝐭𝐭𝐞𝐫 𝐬𝐨𝐛𝐫𝐞: ${text}\n★¸.•☆•.¸★ 𝐓𝐖𝐄𝐄𝐓𝐏𝐎𝐒𝐓𝐒 ★⡀.•☆•.★`}),
 footer: proto.Message.InteractiveMessage.Footer.create({text: null}),
 header: proto.Message.InteractiveMessage.Header.create({hasMediaAttachment: false}),
 carouselMessage: proto.Message.InteractiveMessage.CarouselMessage.create({cards: mini})
