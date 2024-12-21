@@ -5,7 +5,7 @@ import axios from 'axios';
 const { proto, generateWAMessageFromContent, generateWAMessageContent } = (await import('@whiskeysockets/baileys')).default;
 
 let handler = async (m, { conn, text }) => {
-if (!text) { return conn.reply(m.chat, '🚩 Ingresa El Texto De Lo Que Quieres Buscar En Twitter', m, rcanal); }
+if (!text) { return conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐈𝐧𝐭𝐞𝐧𝐭𝐞 𝐧𝐮𝐞𝐯𝐚𝐦𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐚 𝐯𝐞𝐳 𝐩𝐫𝐨𝐩𝐨𝐫𝐜𝐢𝐨𝐧𝐚𝐧𝐝𝐨 𝐮𝐧 𝐭í𝐭𝐮𝐥𝐨 𝐝𝐞 𝐓𝐰𝐢𝐭𝐭𝐞𝐫.\n\n[✅] 𝐄𝐣𝐞𝐦𝐩𝐥𝐨: */tiktoksearch* 𝐌𝐢𝐳𝐮𝐤𝐢.', m, rcanal); }
 
 async function createImage(url) {
 const { imageMessage } = await generateWAMessageContent({image: { url }}, { upload: conn.waUploadToServer });
@@ -23,10 +23,10 @@ let resultsToDisplay = json.slice(0, 7);
 let mini = [];
 for (let res of resultsToDisplay) {
 
-let txt =  `👤 *User:* ${res.user}\n`
-    txt += `📅 *Publicacion:* ${res.post}\n`
-    txt += `🎭 *Perfil:* ${res.profile}\n`
-    txt += `🔗 *Link:* ${res.user_link}\n`
+let txt =  `👤 *𝐔𝐒𝐄𝐑:* ${res.user}\n`
+    txt += `📝 *𝐏𝐔𝐁𝐋𝐈𝐂𝐀𝐂𝐈Ó𝐍:* ${res.post}\n`
+    txt += `📇 *𝐏𝐄𝐑𝐅𝐈𝐋:* ${res.profile}\n`
+    txt += `🔗 *𝐋𝐈𝐍𝐊:* ${res.user_link}\n`
 
 mini.push({
 body: proto.Message.InteractiveMessage.Body.create({text: null}),
