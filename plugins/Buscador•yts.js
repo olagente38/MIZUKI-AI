@@ -2,7 +2,7 @@ import yts from 'yt-search'
 
 var handler = async (m, { text, conn, args, command, usedPrefix }) => {
 
-if (!text) return conn.reply(m.chat, `🍟 *Escriba el título de algún vídeo de Youtube*\n\nEjemplo, ${usedPrefix + command} Ai Yaemori`, m, rcanal, )
+if (!text) return conn.reply(m.chat, `[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐈𝐧𝐭𝐞𝐧𝐭𝐞 𝐧𝐮𝐞𝐯𝐚𝐦𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐚 𝐯𝐞𝐳 𝐩𝐫𝐨𝐩𝐨𝐫𝐜𝐢𝐨𝐧𝐚𝐧𝐝𝐨 𝐮𝐧 𝐭í𝐭𝐮𝐥𝐨 𝐝𝐞 𝐯𝐢𝐝𝐞𝐨 𝐝𝐞 𝐘𝐨𝐮𝐓𝐮𝐛𝐞.\n\n[✅] 𝐄𝐣𝐞𝐦𝐩𝐥𝐨: */${command}* 𝐀𝐧𝐢𝐦𝐞 𝐌𝐢𝐳𝐮𝐤𝐢`, m, rcanal, )
 
 conn.reply(m.chat, wait, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
@@ -15,16 +15,17 @@ let results = await yts(text)
 let tes = results.all
 let teks = results.all.map(v => {
 switch (v.type) {
-case 'video': return `🍟 *Título:* 
+case 'video': return `★¸.•☆•.¸★ 𝐘𝐓 | 𝐒𝐄𝐀𝐑𝐂𝐇 ★⡀.•☆•.★
+[🍿] *𝐓Í𝐓𝐔𝐋𝐎:* 
 » ${v.title}
 
-🔗 *Enlace:* 
+[🔗] *𝐄𝐍𝐋𝐀𝐂𝐄:* 
 » ${v.url}
 
-🕝 *Duración:*
+[⌛] *𝐃𝐔𝐑𝐀𝐂𝐈Ó𝐍:* 
 » ${v.timestamp}
 
-🚩 *Subido:* 
+[📆] *𝐏𝐔𝐁𝐋𝐈𝐂𝐀𝐃𝐎:*
 » ${v.ago}
 
 👀 *Vistas:* 
