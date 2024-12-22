@@ -1,6 +1,6 @@
 import fs from 'fs';
 const timeout = 60000;
-const poin = 10;
+const poin = 500;
 const handler = async (m, {conn, usedPrefix}) => {
   conn.tekateki = conn.tekateki ? conn.tekateki : {};
   const id = m.chat;
@@ -13,20 +13,19 @@ const handler = async (m, {conn, usedPrefix}) => {
   const _clue = json.response;
   const clue = _clue.replace(/[A-Za-z]/g, '_');
   const caption = `
-ⷮ🚩 *ACERTIJOS*
-✨️ *${json.question}*
-
-⏱️ *Tiempo:* ${(timeout / 1000).toFixed(2)} Segundos
-🎁 *Premio:* *+${poin}* Galletas 🍪`.trim();
+ⷮ *${json.question}*
+*• Tiempo:* ${(timeout / 1000).toFixed(2)} segundos
+*• Bono:* +${poin} Exp
+`.trim();
   conn.tekateki[id] = [
     await conn.reply(m.chat, caption, m), json,
     poin,
     setTimeout(async () => {
-      if (conn.tekateki[id]) await conn.reply(m.chat, `🚩 Se acabó el tiempo!\n*Respuesta:* ${json.response}`, conn.tekateki[id][0]);
+      if (conn.tekateki[id]) await conn.reply(m.chat, `Se acabó el tiempo!\n*Respuesta:* ${json.response}`, conn.tekateki[id][0]);
       delete conn.tekateki[id];
     }, timeout)];
 };
 handler.help = ['acertijo'];
-handler.tags = ['fun'];
-handler.command = ['acertijo', 'acert', 'adivinanza', 'tekateki'];
+handler.tags = ['game'];
+handler.command = /^(acertijo|acert|pregunta|adivinanza|tekateki)$/i;
 export default handler;
