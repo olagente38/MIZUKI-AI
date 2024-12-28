@@ -21,16 +21,16 @@ let neww = performance.now()
 let speed = neww - old
 const used = process.memoryUsage()
 let yaemori = `★¸.•☆•.¸★ 𝐄𝐒𝐓𝐀𝐃𝐎 | 𝐌𝐈𝐙𝐔𝐊𝐈 ★⡀.•☆•.★\n\n`
-mizuki += `[👤] 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 » SpectrumOfc\n`
-mizuki += `[❄️] 𝐏𝐑𝐄𝐅𝐈𝐉𝐎 » [ ${usedPrefix} ]\n`
-mizuki += `[⚙️] 𝐕𝐄𝐑𝐒𝐈Ó𝐍 » ${vs}\n`
-mizuki += `[🔐] 𝐂𝐇𝐀𝐓𝐒 𝐏𝐑𝐈𝐕𝐀𝐃𝐎𝐒 » ${chats.length - groupsIn.length}\n`
-mizuki += `[📝] 𝐓𝐎𝐓𝐀𝐋 𝐃𝐄 𝐂𝐇𝐀𝐓𝐒 » ${chats.length}\n`
-mizuki += `[👥] 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 » ${totalreg}\n`
-mizuki += `[📩] 𝐆𝐑𝐔𝐏𝐎𝐒 » ${groupsIn.length}\n`
-mizuki += `[⏰] 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃 » ${muptime}\n`
-mizuki += `[💨] 𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃 » ${(speed * 1000).toFixed(0) / 1000}\n`
-mizuki += `[📌] 𝐒𝐔𝐁𝐁𝐎𝐓𝐒 𝐀𝐂𝐓𝐈𝐕𝐎𝐒 » ${totalUsers || '0'}`
+yaemori += `[👤] 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 » SpectrumOfc\n`
+yaemori += `[❄️] 𝐏𝐑𝐄𝐅𝐈𝐉𝐎 » [ ${usedPrefix} ]\n`
+yaemori += `[⚙️] 𝐕𝐄𝐑𝐒𝐈Ó𝐍 » ${vs}\n`
+yaemori += `[🔐] 𝐂𝐇𝐀𝐓𝐒 𝐏𝐑𝐈𝐕𝐀𝐃𝐎𝐒 » ${chats.length - groupsIn.length}\n`
+yaemori += `[📝] 𝐓𝐎𝐓𝐀𝐋 𝐃𝐄 𝐂𝐇𝐀𝐓𝐒 » ${chats.length}\n`
+yaemori += `[👥] 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 » ${totalreg}\n`
+yaemori += `[📩] 𝐆𝐑𝐔𝐏𝐎𝐒 » ${groupsIn.length}\n`
+yaemori += `[⏰] 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃 » ${muptime}\n`
+yaemori += `[💨] 𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃 » ${(speed * 1000).toFixed(0) / 1000}\n`
+yaemori += `[📌] 𝐒𝐔𝐁𝐁𝐎𝐓𝐒 𝐀𝐂𝐓𝐈𝐕𝐎𝐒 » ${totalUsers || '0'}`
 await conn.sendFile(m.chat, pp, 'yaemori.jpg', yaemori, fkontak, null, rcanal)
 }
 handler.help = ['status']
