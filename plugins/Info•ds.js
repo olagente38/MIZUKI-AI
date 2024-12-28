@@ -6,7 +6,7 @@ import path from 'path'
 var handler = async (m, { conn, usedPrefix }) => {
 
 if (global.conn.user.jid !== conn.user.jid) {
-return conn.reply(m.chat, '🚩 *Utiliza este comando directamente en el número principal del Bot*', m, rcanal, )
+return conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐔𝐭𝐢𝐥𝐢𝐳𝐚 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐝𝐢𝐫𝐞𝐜𝐭𝐚𝐦𝐞𝐧𝐭𝐞 𝐞𝐧 𝐞𝐥 𝐧ú𝐦𝐞𝐫𝐨 𝐩𝐫𝐢𝐧𝐜𝐢𝐩𝐚𝐥 𝐝𝐞𝐥 𝐁𝐨𝐭.', m, rcanal, )
 }
 
 let chatId = m.isGroup ? [m.chat, m.sender] : [m.sender]
@@ -25,9 +25,9 @@ break
 }}}
 
 if (filesDeleted === 0) {
-await conn.reply(m.chat, '🚩 *No se encontró ningún archivo que incluya la ID del chat*', m, rcanal, )
+await conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐍𝐨 𝐬𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫ó 𝐧𝐢𝐧𝐠ú𝐧 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐪𝐮𝐞 𝐢𝐧𝐜𝐥𝐮𝐲𝐚 𝐥𝐚 𝐈𝐃 𝐝𝐞𝐥 𝐜𝐡𝐚𝐭.', m, rcanal, )
 } else {
-await conn.reply(m.chat, `🍟 *Se eliminaron ${filesDeleted} archivos de sesión*`, m, rcanal, )
+await conn.reply(m.chat, `[✅] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. *Se eliminaron ${filesDeleted} archivos de sesión*`, m, rcanal, )
 conn.reply(m.chat, `🚩 *¡Hola! ¿logras verme?*`, m, rcanal, )
 }
 } catch (err) {
