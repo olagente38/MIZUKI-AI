@@ -27,12 +27,12 @@ break
 if (filesDeleted === 0) {
 await conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐍𝐨 𝐬𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫ó 𝐧𝐢𝐧𝐠ú𝐧 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐪𝐮𝐞 𝐢𝐧𝐜𝐥𝐮𝐲𝐚 𝐥𝐚 𝐈𝐃 𝐝𝐞𝐥 𝐜𝐡𝐚𝐭.', m, rcanal, )
 } else {
-await conn.reply(m.chat, `[✅] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. *Se eliminaron ${filesDeleted} archivos de sesión*`, m, rcanal, )
-conn.reply(m.chat, `🚩 *¡Hola! ¿logras verme?*`, m, rcanal, )
+await conn.reply(m.chat, `[✅] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚.\n\n𝐒𝐞 𝐞𝐥𝐢𝐦𝐢𝐧𝐚𝐫𝐨𝐧 ${filesDeleted} 𝐚𝐫𝐜𝐡𝐢𝐯𝐨𝐬 𝐝𝐞 𝐬𝐞𝐬𝐢ó𝐧.`, m, rcanal, )
+conn.reply(m.chat, `[🪄] ¡𝐇𝐨𝐥𝐚! ¿𝐄𝐬𝐭á𝐬 𝐚𝐡í? ¿𝐌𝐞 𝐩𝐮𝐞𝐝𝐞𝐬 𝐯𝐞𝐫 𝐚𝐡𝐨𝐫𝐚?`, m, rcanal, )
 }
 } catch (err) {
 console.error('Error al leer la carpeta o los archivos de sesión:', err)
-await conn.reply(m.chat, '🚩 *Ocurrió un fallo*', m, rcanal, )
+await conn.reply(m.chat, '[🚨] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐎𝐜𝐮𝐫𝐫𝐢ó 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫.', m, rcanal, )
 }
 
 }
