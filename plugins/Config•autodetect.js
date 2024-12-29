@@ -8,7 +8,7 @@ let usuario = `@${m.sender.split`@`[0]}`
 let pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || 'https://qu.ax/QGAVS.jpg'  
 
 let nombre, foto, edit, newlink, status, admingp, noadmingp
-nombre = `*${usuario}*\n✨️ Ha cambiado el nombre del grupo\n\n🌻 Ahora el grupo se llama:\n*${m.messageStubParameters[0]}*`
+nombre = ` ︿︿︿︿︿︿︿︿︿︿︿︿\n┊  ⚒️「 \`𝐀𝐔𝐓𝐎 | 𝐃𝐄𝐓𝐄𝐂𝐓\` 」⚒️ \n ︶︶︶︶︶︶︶︶︶︶︶︶\n*┊ 👤* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 *»* ${usuario} \n*┊ 🔖* 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃:*»* 𝐇𝐚 𝐜𝐚𝐦𝐛𝐢𝐚𝐝𝐨 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨\n┊ 📝* 𝐍𝐎𝐌𝐁𝐑𝐄 𝐀𝐂𝐓𝐔𝐀𝐋: *»* ${m.messageStubParameters[0]}\n ︶︶︶︶︶︶︶︶︶︶︶︶`
 foto = `*${usuario}*\n🚩 Ha cambiado la imagen del grupo`
 edit = `*${usuario}*\n🌺 Ha permitido que ${m.messageStubParameters[0] == 'on' ? 'solo admins' : 'todos'} puedan configurar el grupo`
 newlink = `🌸 El enlace del grupo ha sido restablecido por:\n*» ${usuario}*`
