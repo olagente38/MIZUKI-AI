@@ -28,7 +28,6 @@ yaemori += `[🔐] 𝐂𝐇𝐀𝐓𝐒 𝐏𝐑𝐈𝐕𝐀𝐃𝐎𝐒 » ${ch
 yaemori += `[📝] 𝐓𝐎𝐓𝐀𝐋 𝐃𝐄 𝐂𝐇𝐀𝐓𝐒 » ${chats.length}\n`
 yaemori += `[👥] 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 » ${totalreg}\n`
 yaemori += `[📩] 𝐆𝐑𝐔𝐏𝐎𝐒 » ${groupsIn.length}\n`
-yaemori += `[⏰] 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃 » ${uptime}\n`
 yaemori += `[💨] 𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃 » ${(speed * 1000).toFixed(0) / 1000}\n`
 yaemori += `[📌] 𝐒𝐔𝐁𝐁𝐎𝐓𝐒 𝐀𝐂𝐓𝐈𝐕𝐎𝐒 » ${totalUsers || '0'}`
 await conn.sendFile(m.chat, pp, 'yaemori.jpg', yaemori, fkontak, null, rcanal)
