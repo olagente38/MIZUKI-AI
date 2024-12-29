@@ -10,8 +10,8 @@ let pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || 'http
 let nombre, foto, edit, newlink, status, admingp, noadmingp
 nombre = ` ︿︿︿︿︿︿︿︿︿︿︿︿\n┊  ⚒️「 \`𝐀𝐔𝐓𝐎 | 𝐃𝐄𝐓𝐄𝐂𝐓\` 」⚒️ \n ︶︶︶︶︶︶︶︶︶︶︶︶\n*┊ 👤* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 *»* ${usuario} \n*┊ 🔖* 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃:*»* Ha cambiado el nombre del grupo\n*┊ 📝* 𝐍𝐎𝐌𝐁𝐑𝐄 𝐀𝐂𝐓𝐔𝐀𝐋 *»* ${m.messageStubParameters[0]}\n ︶︶︶︶︶︶︶︶︶︶︶︶`
 foto = ` ︿︿︿︿︿︿︿︿︿︿︿︿\n┊  ⚒️「 \`𝐀𝐔𝐓𝐎 | 𝐃𝐄𝐓𝐄𝐂𝐓\` 」⚒️ \n ︶︶︶︶︶︶︶︶︶︶︶︶\n*┊ 👤* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 *»* ${usuario} \n*┊ 🔖* 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃:*»* Ha cambiado la imagen del grupo\n ︶︶︶︶︶︶︶︶︶︶︶︶`
-edit = `*${usuario}*\n🌺 Ha permitido que ${m.messageStubParameters[0] == 'on' ? 'solo admins' : 'todos'} puedan configurar el grupo`
-newlink = `🌸 El enlace del grupo ha sido restablecido por:\n*» ${usuario}*`
+edit = ` ︿︿︿︿︿︿︿︿︿︿︿︿\n┊  ⚒️「 \`𝐀𝐔𝐓𝐎 | 𝐃𝐄𝐓𝐄𝐂𝐓\` 」⚒️ \n ︶︶︶︶︶︶︶︶︶︶︶︶\n*┊ 👤* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 *»* ${usuario} \n*┊ 🔖* 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃:*»* Ha permitido que ${m.messageStubParameters[0] == 'on' ? 'solo admins' : 'todos'} puedan configurar el grupo\n ︶︶︶︶︶︶︶︶︶︶︶︶`
+newlink = ` ︿︿︿︿︿︿︿︿︿︿︿︿\n┊  ⚒️「 \`𝐀𝐔𝐓𝐎 | 𝐃𝐄𝐓𝐄𝐂𝐓\` 」⚒️ \n ︶︶︶︶︶︶︶︶︶︶︶︶\n*┊ 👤* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 *»* ${usuario} \n*┊ 🔖* 𝐀𝐂𝐓𝐈𝐕𝐈𝐃𝐀𝐃:*»* El enlace del grupo ha sido restablecido\n ︶︶︶︶︶︶︶︶︶︶︶︶`
 status = `El grupo ha sido ${m.messageStubParameters[0] == 'on' ? '*cerrado 🔒*' : '*abierto 🔓*'} Por *${usuario}*\n\n💬 Ahora ${m.messageStubParameters[0] == 'on' ? '*solo admins*' : '*todos*'} pueden enviar mensaje`
 admingp = `*@${m.messageStubParameters[0].split`@`[0]}* Ahora es admin del grupo 🥳\n\n💫 Acción hecha por:\n*» ${usuario}*`
 noadmingp =  `*@${m.messageStubParameters[0].split`@`[0]}* Deja de ser admin del grupo 😿\n\n💫 Acción hecha por:\n*» ${usuario}*`
