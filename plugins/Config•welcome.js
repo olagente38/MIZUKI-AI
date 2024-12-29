@@ -13,7 +13,7 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let userName = user ? user.name : await conn.getName(who);
 
   if (chat.welcome && m.messageStubType == 27) {
-    let bienvenida = `ゲ◜៹ New Member ៹◞ゲ \n\nUsuario: @${m.messageStubParameters[0].split`@`[0]} \nGrupo: ${groupMetadata.subject}\n${dev}`;
+    let bienvenida = ` ︿︿︿︿︿︿︿︿︿︿︿︿\n┊  👋🏻「 \`𝐖𝐄𝐋𝐂𝐎𝐌𝐄\` 」👋🏻 \n ︶︶︶︶︶︶︶︶︶︶︶︶\n*┊👤* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 *»* @${m.messageStubParameters[0].split`@`[0]} \n*┊📝* 𝐆𝐑𝐔𝐏𝐎 *»* ${groupMetadata.subject}\n${dev} \n ︶︶︶︶︶︶︶︶︶︶︶︶`;
     
 await conn.sendMini(m.chat, packname, dev, bienvenida, img, img, channel, estilo)
   }
