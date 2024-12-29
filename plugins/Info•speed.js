@@ -21,6 +21,7 @@ let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g
 
 
 let texto = `★¸.•☆•.¸★ 𝐒𝐏𝐄𝐄𝐃 | 𝐌𝐈𝐙𝐔𝐊𝐈 ★⡀.•☆•.★
+
 [🚀] 𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃 » ${latensi.toFixed(4)}
 
 [🕒] 𝐀𝐂𝐓𝐈𝐕𝐎 𝐃𝐔𝐑𝐀𝐍𝐓𝐄 » ${muptime}
