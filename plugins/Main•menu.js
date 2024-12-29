@@ -38,7 +38,6 @@ const defaultMenu = {
 *┊ ✦* Pais » %pais
 *┊ ✦* Chocolates » %chocolates
 *┊ ✦* Nivel » %level
-*┊ ✦* Rango » %role
  ︶︶︶︶︶︶︶︶︶︶︶︶
  ︿︿︿︿︿︿︿︿︿︿︿︿
 ┊ 🪄 「 \`𝐈𝐍𝐅𝐎 | 𝐁𝐎𝐓\` 」 🪄
@@ -46,12 +45,11 @@ const defaultMenu = {
 *┊ ✦* Made by » SpectrumOfc
 *┊ ✦* Bot » %botofc
 *┊ ✦* Fecha » %fecha
-*┊ ✦* Actividad » %muptime
 *┊ ✦* Usuarios » %totalreg
  ︶︶︶︶︶︶︶︶︶︶︶︶
 `.trimStart(),
     header: ' ︿︿︿︿︿︿︿︿︿︿︿︿\n┊ 🍿 「 `%category` 」🍿\n ︶︶︶︶︶︶︶︶︶︶︶︶',
-  body: '*┊ ✦* _%cmd_',
+  body: '*┊ ✷* _%cmd_',
   footer: ' ︶︶︶︶︶︶︶︶︶︶︶︶\n',
   after: `> ${dev}`,
 }
