@@ -293,7 +293,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     default:
       if (!/[01]/.test(command)) return conn.reply(m.chat, `
  ︿︿︿︿︿︿︿︿︿︿︿︿
-┊ 📝 「 \`𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐄𝐒 | 𝐎𝐖𝐍𝐄𝐑\` 」 📝
+┊  「 \`𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐄𝐒 | 𝐎𝐖𝐍𝐄𝐑\` 」 
  ︶︶︶︶︶︶︶︶︶︶︶︶
 *┊»* ${usedPrefix + command} antispam
 *┊»* ${usedPrefix + command} antiprivado
@@ -303,7 +303,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
  ︶︶︶︶︶︶︶︶︶︶︶︶
 
  ︿︿︿︿︿︿︿︿︿︿︿︿
-┊ 📝 「 \`𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐄𝐒 | 𝐆𝐑𝐔𝐏𝐎𝐒\` 」 📝
+┊  「 \`𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐄𝐒 | 𝐆𝐑𝐔𝐏𝐎𝐒\` 」 
  ︶︶︶︶︶︶︶︶︶︶︶︶
 *┊»* ${usedPrefix + command} welcome 
 *┊»* ${usedPrefix + command} autoaceptar
@@ -325,8 +325,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
  ︶︶︶︶︶︶︶︶︶︶︶︶`, m, rcanal)
       throw false
   }
-  conn.reply(m.chat, `🚩 La función *${type}* se *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? 'para este Bot' : isUser ? '' : 'para este chat'}`, m, rcanal)
-}
+  conn.reply(m.chat, `[✅] 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐋𝐚 𝐟𝐮𝐧𝐜𝐢ó𝐧 *${type}* 𝐬𝐞 *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? '𝐩𝐚𝐫𝐚 𝐌𝐢𝐳𝐮𝐤𝐢 𝐀𝐢' : isUser ? '' : '𝐩𝐚𝐫𝐚 𝐞𝐬𝐭𝐞 𝐜𝐡𝐚𝐭'}`, m, rcanal)
+
 
 handler.help = ['enable', 'disable']
 handler.tags = ['nable', 'owner']
