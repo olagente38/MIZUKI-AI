@@ -33,11 +33,11 @@ const defaultMenu = {
  ︿︿︿︿︿︿︿︿︿︿︿︿
 ┊ 📝 「 \`𝐈𝐍𝐅𝐎 | 𝐔𝐒𝐄𝐑\` 」 📝
  ︶︶︶︶︶︶︶︶︶︶︶︶ 
-*┊ ✷»* Usuario » %name
-*┊ ✷»* Exp » %exp
-*┊ ✷»* Pais » %pais
-*┊ ✦* Chocolates » %chocolates
-*┊ ✦* Nivel » %level
+*┊ 👤»* Usuario » %name
+*┊ 🌟»* Exp » %exp
+*┊ 🌍»* Pais » %pais
+*┊ 🍫* Chocolates » %chocolates
+*┊ 🎚️* Nivel » %level
  ︶︶︶︶︶︶︶︶︶︶︶︶
  ︿︿︿︿︿︿︿︿︿︿︿︿
 ┊ 🪄 「 \`𝐈𝐍𝐅𝐎 | 𝐁𝐎𝐓\` 」 🪄
