@@ -292,33 +292,37 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     break
     default:
       if (!/[01]/.test(command)) return conn.reply(m.chat, `
-*👑 Funciones solo para owner*
+ ︿︿︿︿︿︿︿︿︿︿︿︿
+┊ 📝 「 \`𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐄𝐒 | 𝐎𝐖𝐍𝐄𝐑\` 」 📝
+ ︶︶︶︶︶︶︶︶︶︶︶︶
+*┊»* ${usedPrefix + command} antispam
+*┊»* ${usedPrefix + command} antiprivado
+*┊»* ${usedPrefix + command} status
+*┊»* ${usedPrefix + command} autoread
+*┊»* ${usedPrefix + command} restrict
+ ︶︶︶︶︶︶︶︶︶︶︶︶
 
-${usedPrefix + command} antispam
-${usedPrefix + command} antiprivado
-${usedPrefix + command} status
-${usedPrefix + command} autoread
-${usedPrefix + command} restrict
-
-*🚩 Funciones de grupos*
-
-${usedPrefix + command} welcome 
-${usedPrefix + command} autoaceptar
-${usedPrefix + command} autorechazar
-${usedPrefix + command} autoresponder
-${usedPrefix + command} autolevelup
-${usedPrefix + command} antibot
-${usedPrefix + command} subbots
-${usedPrefix + command} reaccion
-${usedPrefix + command} simi
-${usedPrefix + command} audios
-${usedPrefix + command} antiver
-${usedPrefix + command} detect 
-${usedPrefix + command} delete
-${usedPrefix + command} nsfw 
-${usedPrefix + command} modoadmin 
-${usedPrefix + command} antifake
-${usedPrefix + command} antilink`, m, rcanal)
+ ︿︿︿︿︿︿︿︿︿︿︿︿
+┊ 📝 「 \`𝐅𝐔𝐍𝐂𝐈𝐎𝐍𝐄𝐒 | 𝐆𝐑𝐔𝐏𝐎𝐒\` 」 📝
+ ︶︶︶︶︶︶︶︶︶︶︶︶
+*┊»* ${usedPrefix + command} welcome 
+*┊»* ${usedPrefix + command} autoaceptar
+*┊»* ${usedPrefix + command} autorechazar
+*┊»* ${usedPrefix + command} autoresponder
+*┊»* ${usedPrefix + command} autolevelup
+*┊»* ${usedPrefix + command} antibot
+*┊»* ${usedPrefix + command} subbots
+*┊»* ${usedPrefix + command} reaccion
+*┊»* ${usedPrefix + command} simi
+*┊»* ${usedPrefix + command} audios
+*┊»* ${usedPrefix + command} antiver
+*┊»* ${usedPrefix + command} detect 
+*┊»* ${usedPrefix + command} delete
+*┊»* ${usedPrefix + command} nsfw 
+*┊»* ${usedPrefix + command} modoadmin 
+*┊»* ${usedPrefix + command} antifake
+*┊»* ${usedPrefix + command} antilink
+ ︶︶︶︶︶︶︶︶︶︶︶︶`, m, rcanal)
       throw false
   }
   conn.reply(m.chat, `🚩 La función *${type}* se *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? 'para este Bot' : isUser ? '' : 'para este chat'}`, m, rcanal)
