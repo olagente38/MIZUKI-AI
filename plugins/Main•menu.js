@@ -33,19 +33,19 @@ const defaultMenu = {
  ︿︿︿︿︿︿︿︿︿︿︿︿
 ┊ 📝 「 \`𝐈𝐍𝐅𝐎 | 𝐔𝐒𝐄𝐑\` 」 📝
  ︶︶︶︶︶︶︶︶︶︶︶︶ 
-*┊ 👤»* Usuario » %name
-*┊ 🌟»* Exp » %exp
-*┊ 🌍»* Pais » %pais
-*┊ 🍫* Chocolates » %chocolates
-*┊ 🎚️* Nivel » %level
+*┊ 👤* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎 ➔ %name
+*┊ 🌟* 𝐄𝐗𝐏 ➔ %exp
+*┊ 🌍* 𝐏𝐀𝐈𝐒 ➔ %pais
+*┊ 🍫* 𝐂𝐇𝐎𝐂𝐎𝐋𝐀𝐓𝐄𝐒 ➔ %chocolates
+*┊ 🎚️* 𝐍𝐈𝐕𝐄𝐋 ➔ %level
  ︶︶︶︶︶︶︶︶︶︶︶︶
  ︿︿︿︿︿︿︿︿︿︿︿︿
 ┊ 🪄 「 \`𝐈𝐍𝐅𝐎 | 𝐁𝐎𝐓\` 」 🪄
  ︶︶︶︶︶︶︶︶︶︶︶︶
-*┊ ✦* Made by » SpectrumOfc
-*┊ ✦* Bot » %botofc
-*┊ ✦* Fecha » %fecha
-*┊ ✦* Usuarios » %totalreg
+*┊ 🧑‍🎨* 𝐌𝐀𝐃𝐄 𝐁𝐘 ➔ SpectrumOfc
+*┊ 🤖* 𝐁𝐎𝐓 ➔ %botofc
+*┊ 📅* 𝐅𝐄𝐂𝐇𝐀 ➔ %fecha
+*┊ 🧑‍🤝‍🧑* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 ➔ %totalreg
  ︶︶︶︶︶︶︶︶︶︶︶︶
 `.trimStart(),
     header: ' ︿︿︿︿︿︿︿︿︿︿︿︿\n┊ 🍿 「 `%category` 」🍿\n ︶︶︶︶︶︶︶︶︶︶︶︶',
