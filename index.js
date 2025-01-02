@@ -9,7 +9,7 @@ import yargs from 'yargs';
 import chalk from 'chalk';
 
 // Imprime el mensaje de inicio
-console.log('\n✰ Iniciando YaemoriBot ✰');
+console.log('\n✰ Iniciando Mizuki-Ai ✰');
 
 // Directorio actual del archivo
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -23,7 +23,7 @@ const { say } = cfonts;
 const rl = createInterface(process.stdin, process.stdout);
 
 // Mostrar el logo de inicio con 'cfonts'
-say('Yaemori\nBot-MD', {
+say('Mizuki\nAi', {
     font: 'block',
     align: 'center',
     colors: ['red']
