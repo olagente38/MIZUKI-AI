@@ -3,7 +3,7 @@ import yts from "yt-search";
 
 let handler = async (m, { conn, text }) => {
 if (!text) {
-return m.reply("🍭 Ingresa el texto de lo que quieres buscar")
+return m.reply("*[🚨]* 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐢𝐧𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚. 𝐈𝐧𝐭𝐞𝐧𝐭𝐞 𝐧𝐮𝐞𝐯𝐚𝐦𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐚 𝐯𝐞𝐳 𝐩𝐫𝐨𝐩𝐨𝐫𝐜𝐢𝐨𝐧𝐚𝐧𝐝𝐨 𝐮𝐧 𝐭í𝐭𝐮𝐥𝐨 𝐝𝐞 𝐯𝐢𝐝𝐞𝐨 𝐝𝐞 𝐘𝐨𝐮𝐓𝐮𝐛𝐞.")
 }
 
 let ytres = await yts(text)
@@ -17,7 +17,7 @@ let { title, thumbnail, timestamp, views, ago, url } = video
 
 let vistas = parseInt(views).toLocaleString("es-ES") + " vistas"
 
-let HS = `❀ enviando su audio de ${title}`
+let HS = `*[✅]* 𝐒𝐨𝐥𝐢𝐜𝐢𝐭𝐮𝐝 𝐞𝐧 𝐩𝐫𝐨𝐜𝐞𝐬𝐨...`
 
 let thumb = (await conn.getFile(thumbnail))?.data;
 
